@@ -1,9 +1,9 @@
 _id: req_8ab59c8afea54716af3229ad2330b038
 type: Request
 parentId: fld_6d1908878979424eaec49720e9ccaafb
-modified: 1739494614289
+modified: 1739647901563
 created: 1738526759749
-url: https://localhost:7156/v1/funcionario/45
+url: https://localhost:7156/v1/funcionario/4
 name: funcionario/id
 description: ""
 method: GET

@@ -1,0 +1,34 @@
+_id: req_3ffb06532cae4fcd9a67778f6517b942
+type: Request
+parentId: fld_a0b921ca100d451a9cc0502305056cfd
+modified: 1739652015560
+created: 1739650727733
+url: https://localhost:7156/v1/aluno/3/responsavel
+name: aluno/id/responsavel
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "ParentescoId": 1,
+    	"ResponsavelId": 4
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977574596
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
