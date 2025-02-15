@@ -1,0 +1,32 @@
+_id: req_56c7fb80c6204c859f674019d9d7fec2
+type: Request
+parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
+modified: 1739494443123
+created: 1738977634611
+url: https://localhost:7156/v1/usuario/13
+name: usuario
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"Senha": "Renatinho1update#"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+metaSortKey: -1738977575196
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

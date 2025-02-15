@@ -1,0 +1,27 @@
+_id: req_1da9ebf1b6bd4a99bfe080a6ff62b15a
+type: Request
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1739586072498
+created: 1739585099775
+url: https://localhost:7156/v1/instituicaoensino/1
+name: instituicaoensino/id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+    id: pair_1b93703002424c6d99d610bf7fc18c59
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1738977574896
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

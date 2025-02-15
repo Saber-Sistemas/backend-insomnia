@@ -1,0 +1,27 @@
+_id: req_71a6ca280ae2444eb868a64226285185
+type: Request
+parentId: fld_84cc5aebf8144b51b6b515fd813cbfca
+modified: 1739587286012
+created: 1739585089142
+url: https://localhost:7156/v1/mantenedora/3
+name: mantenedora/id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+    id: pair_1b93703002424c6d99d610bf7fc18c59
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977574896
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

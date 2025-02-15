@@ -1,0 +1,26 @@
+_id: req_d855c2745dde47698da8ff65d56aaf9d
+type: Request
+parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
+modified: 1739580087143
+created: 1739229770584
+url: https://localhost:7156/v1/usuario/grid/
+name: usuario/grid
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977574746
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

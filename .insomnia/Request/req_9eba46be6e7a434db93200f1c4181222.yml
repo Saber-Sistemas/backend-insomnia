@@ -1,0 +1,24 @@
+_id: req_9eba46be6e7a434db93200f1c4181222
+type: Request
+parentId: fld_3f80b0c8b8df4bc9a18bebacd965caf6
+modified: 1739580123451
+created: 1739494889367
+url: https://localhost:7156/v1/municipio/?nome=jose
+  preto&paginaNumero=1&paginaQuantidade=10
+name: municipio
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1739494889367
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

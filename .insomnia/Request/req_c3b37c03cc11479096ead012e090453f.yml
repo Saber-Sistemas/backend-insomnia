@@ -1,0 +1,26 @@
+_id: req_c3b37c03cc11479096ead012e090453f
+type: Request
+parentId: fld_d415e02312ec4dda83718b2ed871d707
+modified: 1738978810290
+created: 1738626414434
+url: https://localhost:7156/v1/teste
+name: teste
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977562929.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

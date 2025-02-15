@@ -1,0 +1,26 @@
+_id: req_c0c004f0469448af91cd8158a72122e5
+type: Request
+parentId: fld_6d1908878979424eaec49720e9ccaafb
+modified: 1739580062101
+created: 1739230552767
+url: https://localhost:7156/v1/funcionario/grid
+name: funcionario/grid
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977574771
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

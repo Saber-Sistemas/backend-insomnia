@@ -1,0 +1,34 @@
+_id: req_a1921c83d8c14388a376bb9455c5648e
+type: Request
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1739586472074
+created: 1739585099779
+url: https://localhost:7156/v1/instituicaoensino
+name: instituicaoensino
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "MantenedoraId": 1,
+      "Nome": "Colégio dos sssssuper heróis"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1738977575496
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

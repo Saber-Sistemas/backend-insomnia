@@ -1,0 +1,30 @@
+_id: req_5ce799c7fb484b0793585c9121d0723e
+type: Request
+parentId: fld_6d1908878979424eaec49720e9ccaafb
+modified: 1739494809987
+created: 1739044535652
+url: https://localhost:7156/v1/funcionario/442
+name: funcionario
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1738977574696
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

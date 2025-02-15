@@ -1,0 +1,27 @@
+_id: req_85e0f15f69484e8daf78cb12f984b196
+type: Request
+parentId: fld_eba01c7d2751498fbaa280e5844e5c61
+modified: 1739499412951
+created: 1739497188218
+url: https://localhost:7156/v1/responsavel/3
+name: responsavel/id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+    id: pair_1b93703002424c6d99d610bf7fc18c59
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977574896
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

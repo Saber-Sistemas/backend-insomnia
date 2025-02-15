@@ -1,0 +1,31 @@
+_id: req_a381b83fea474ccf8e7c64cf69e5e79f
+type: Request
+parentId: fld_863efdf05c9a4fb88b2fec7660bacbb9
+modified: 1738798646418
+created: 1737904005918
+url: "{{ _.Dominio }}/v1/sessao/entrar"
+name: sessao/entrar
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"usuario":"vandre",
+    	"senha": "Ab1234"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1738625649371
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

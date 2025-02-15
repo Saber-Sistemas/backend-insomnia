@@ -1,0 +1,13 @@
+_id: fld_d415e02312ec4dda83718b2ed871d707
+type: RequestGroup
+parentId: wrk_336ed384e4564d2b8b1e4af8485a7f45
+modified: 1738800011301
+created: 1737915128242
+name: Local
+description: ""
+environment:
+  Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVmFuZHLDqSBNZWRpbmEiLCJqdGkiOiI4MDk0ZTc0Yi03MGM4LTQ3MTItOGIxZC0yYmJjN2M0ZDA0NTgiLCJleHAiOjE3Mzk0MDQ3OTIsImlzcyI6IkRhcnZlbEJhY2tlbmRTZXNzYW8iLCJhdWQiOiJEYXJ2ZWxCYWNrZW5kU2VydmljZSJ9.YtiAM9V-GEF-jrWSVnUIkvbPwGtDVUyVzWyfMkg1Lz4
+environmentPropertyOrder:
+  "&":
+    - Token
+metaSortKey: -1737915128242

@@ -1,0 +1,32 @@
+_id: req_0e1f3838735c4c6782a4c892bfeb9397
+type: Request
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1739586051161
+created: 1739585099783
+url: https://localhost:7156/v1/instituicaoensino/2
+name: instituicaoensino
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"Nome": "Escola dos programadores"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+metaSortKey: -1738977575296
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,37 @@
+_id: req_d455ef2162e544e486a491064d54d4b4
+type: Request
+parentId: fld_a0b921ca100d451a9cc0502305056cfd
+modified: 1739496945997
+created: 1739494836562
+url: https://localhost:7156/v1/aluno
+name: aluno
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "InstituicaoEnsinoId": 1,
+      "Nome": "Braian",
+    	"DataNascimento": "2022-01-05",
+    	"Cpf":"22342738030",
+    	"Rg":"3333434"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977575496
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

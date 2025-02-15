@@ -1,0 +1,26 @@
+_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+type: Request
+parentId: fld_a0b921ca100d451a9cc0502305056cfd
+modified: 1739497046862
+created: 1739494836553
+url: https://localhost:7156/v1/aluno
+name: aluno
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: true
+metaSortKey: -1738977574796
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

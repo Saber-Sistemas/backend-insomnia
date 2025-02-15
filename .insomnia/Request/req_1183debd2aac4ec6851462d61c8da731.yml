@@ -1,0 +1,23 @@
+_id: req_1183debd2aac4ec6851462d61c8da731
+type: Request
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1739586084838
+created: 1739585099770
+url: https://localhost:7156/v1/instituicaoensino
+name: instituicaoensino
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1738977574796
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
