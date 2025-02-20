@@ -1,9 +1,9 @@
 _id: req_3ffb06532cae4fcd9a67778f6517b942
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1739652015560
+modified: 1739714184682
 created: 1739650727733
-url: https://localhost:7156/v1/aluno/3/responsavel
+url: https://localhost:7156/v1/aluno/9/responsavel
 name: aluno/id/responsavel
 description: ""
 method: POST
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-      "ParentescoId": 1,
-    	"ResponsavelId": 4
+      "ResponsavelId": 1,
+    	"ParentescoId": 1	
     }
 parameters: []
 headers:

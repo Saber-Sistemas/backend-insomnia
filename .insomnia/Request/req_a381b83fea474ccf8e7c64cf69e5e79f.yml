@@ -1,7 +1,7 @@
 _id: req_a381b83fea474ccf8e7c64cf69e5e79f
 type: Request
 parentId: fld_863efdf05c9a4fb88b2fec7660bacbb9
-modified: 1738798646418
+modified: 1739673745131
 created: 1737904005918
 url: "{{ _.Dominio }}/v1/sessao/entrar"
 name: sessao/entrar
@@ -12,7 +12,7 @@ body:
   text: |-
     {
     	"usuario":"vandre",
-    	"senha": "Ab1234"
+    	"senha": "Ab1234*"
     }
 parameters: []
 headers:

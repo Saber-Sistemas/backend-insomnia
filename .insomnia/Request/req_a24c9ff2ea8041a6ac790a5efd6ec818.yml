@@ -1,9 +1,9 @@
 _id: req_a24c9ff2ea8041a6ac790a5efd6ec818
 type: Request
 parentId: fld_6d1908878979424eaec49720e9ccaafb
-modified: 1739318184721
+modified: 1740012940130
 created: 1737903981208
-url: https://localhost:7156/v1/funcionario
+url: https://localhost:7156/v1/funcionario/?termo=medina
 name: funcionario
 description: ""
 method: GET

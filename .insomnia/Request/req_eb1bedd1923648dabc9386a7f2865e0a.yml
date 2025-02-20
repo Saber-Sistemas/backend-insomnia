@@ -1,9 +1,9 @@
 _id: req_eb1bedd1923648dabc9386a7f2865e0a
 type: Request
 parentId: fld_eba01c7d2751498fbaa280e5844e5c61
-modified: 1739497230513
+modified: 1740015945335
 created: 1739497188213
-url: https://localhost:7156/v1/responsavel
+url: https://localhost:7156/v1/responsavel/?termo=man
 name: responsavel
 description: ""
 method: GET

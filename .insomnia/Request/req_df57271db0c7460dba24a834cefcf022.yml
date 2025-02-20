@@ -1,7 +1,7 @@
 _id: req_df57271db0c7460dba24a834cefcf022
 type: Request
 parentId: fld_6d1908878979424eaec49720e9ccaafb
-modified: 1739586175660
+modified: 1739748589536
 created: 1738625779766
 url: https://localhost:7156/v1/funcionario
 name: funcionario
@@ -12,9 +12,9 @@ body:
   text: |-
     {
       "MantenedoraId": 1,
-      "Nome": "Bernardete Outra",
-    	"Endereco": "rua dos limoeiros"
-
+      "Nome": "Madame Aninha",
+    	"Endereco": "sem endereço",
+    	"Cachorro":"asdfad"
     }
 parameters: []
 headers:

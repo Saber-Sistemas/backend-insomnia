@@ -1,7 +1,7 @@
 _id: req_df4b6519f06244938b8b3a058e91ac78
 type: Request
 parentId: fld_84cc5aebf8144b51b6b515fd813cbfca
-modified: 1739587185556
+modified: 1740013688862
 created: 1739585089146
 url: https://localhost:7156/v1/mantenedora
 name: mantenedora
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"RazaoSocial":"Organization Tabajaration",
-    	"NomeFantasia":"Organização Tabajara",
+    	"RazaoSocial":"Nova empresa",
+    	"NomeFantasia":"Empresa do joãozinho",
     	"Cnpj":"36319473000101",
     	"Endereco":"rua da vitória",
     	"MunicipioId":1100056,

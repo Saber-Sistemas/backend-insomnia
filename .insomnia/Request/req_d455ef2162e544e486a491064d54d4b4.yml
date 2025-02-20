@@ -1,7 +1,7 @@
 _id: req_d455ef2162e544e486a491064d54d4b4
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1739496945997
+modified: 1739920738483
 created: 1739494836562
 url: https://localhost:7156/v1/aluno
 name: aluno
@@ -12,10 +12,8 @@ body:
   text: |-
     {
       "InstituicaoEnsinoId": 1,
-      "Nome": "Braian",
-    	"DataNascimento": "2022-01-05",
-    	"Cpf":"22342738030",
-    	"Rg":"3333434"
+      "Nome": "Valéria",
+    	"DataNascimento": "1991-03-02"
     }
 parameters: []
 headers:
