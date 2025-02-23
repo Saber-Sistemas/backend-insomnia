@@ -1,9 +1,9 @@
 _id: req_5858db71143a42c780b26f07f9bd298e
 type: Request
 parentId: fld_84cc5aebf8144b51b6b515fd813cbfca
-modified: 1740015889923
+modified: 1740351785407
 created: 1739585089137
-url: https://localhost:7156/v1/mantenedora?termo=...
+url: https://localhost:7156/v1/mantenedora
 name: mantenedora
 description: ""
 method: GET

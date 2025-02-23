@@ -1,9 +1,9 @@
 _id: req_1183debd2aac4ec6851462d61c8da731
 type: Request
 parentId: fld_08897d4b61674d6ea892703f30021bb1
-modified: 1740013623535
+modified: 1740255146745
 created: 1739585099770
-url: https://localhost:7156/v1/instituicaoensino/?termo=colégi
+url: https://localhost:7156/v1/instituicaoensino/
 name: instituicaoensino
 description: ""
 method: GET

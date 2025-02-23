@@ -1,9 +1,9 @@
 _id: req_5551cb0a34084398a9d58189719c9024
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1739580047947
+modified: 1740274477611
 created: 1739494836575
-url: https://localhost:7156/v1/aluno/grid
+url: https://localhost:7156/v1/aluno/grid/
 name: aluno/grid
 description: ""
 method: GET

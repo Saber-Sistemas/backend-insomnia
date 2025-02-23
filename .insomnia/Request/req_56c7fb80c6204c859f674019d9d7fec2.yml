@@ -1,9 +1,9 @@
 _id: req_56c7fb80c6204c859f674019d9d7fec2
 type: Request
 parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
-modified: 1739494443123
+modified: 1740260856819
 created: 1738977634611
-url: https://localhost:7156/v1/usuario/13
+url: https://localhost:7156/v1/usuario/14
 name: usuario
 description: ""
 method: PUT
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"Senha": "Renatinho1update#"
+    	"FuncionarioId":8
     }
 parameters: []
 headers:
