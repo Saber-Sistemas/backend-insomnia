@@ -1,10 +1,10 @@
 _id: req_827f2725f3b24830807656e5d2baf690
 type: Request
-parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
-modified: 1739494483479
+parentId: fld_973b2b95ee194705aabb0d874e89b5f5
+modified: 1740615364294
 created: 1738977634596
-url: https://localhost:7156/v1/usuario/alterarsenha/12
-name: usuario/alterarsenha
+url: https://localhost:7156/v1/sessao/alterarsenha
+name: sessao/alterarsenha
 description: ""
 method: PATCH
 body:
@@ -12,7 +12,7 @@ body:
   text: |-
     {
     	"SenhaAtual": "Ab1234*",
-    	"SenhaNova": "Ab1234*"
+    	"SenhaNova": "Ab1234*!"
     }
 parameters: []
 headers:
@@ -23,7 +23,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.Token }}"
-metaSortKey: -1738977574996
+metaSortKey: -1740080490975.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

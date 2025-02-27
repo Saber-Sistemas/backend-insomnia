@@ -1,9 +1,9 @@
 _id: req_04f4aa4120724c02a01a37679ddd68cf
 type: Request
 parentId: fld_6d1908878979424eaec49720e9ccaafb
-modified: 1739494605099
+modified: 1740613480755
 created: 1738977605585
-url: https://localhost:7156/v1/funcionario/322
+url: https://localhost:7156/v1/funcionario/67
 name: funcionario
 description: ""
 method: PUT
@@ -11,10 +11,11 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"Nome": "Renatinho update",
-      "Cpf": "98765432221",
+    	"Nome": "Outro fununcionário",
     	"WhatsApp": "",
-    	"TelefonePrincipal": "1736363636"
+    	"TelefonePrincipal": "1736363636",
+    	"MunicipioId":998
+    	
     }
 parameters: []
 headers:
