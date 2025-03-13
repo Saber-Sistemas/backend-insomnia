@@ -1,17 +1,18 @@
 _id: req_3ffb06532cae4fcd9a67778f6517b942
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1739714184682
+parentId: fld_d9bded2defd4465895b88e65ffcaec41
+modified: 1741738430316
 created: 1739650727733
-url: https://localhost:7156/v1/aluno/9/responsavel
-name: aluno/id/responsavel
+url: https://localhost:7156/v1/alunoresponsavel/
+name: alunoresponsavel
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-      "ResponsavelId": 1,
+      "AlunoId": 3,
+    	"ResponsavelId": 1,
     	"ParentescoId": 1	
     }
 parameters: []
@@ -24,7 +25,7 @@ authentication:
   type: bearer
   token: "{{ _.Token }}"
   disabled: false
-metaSortKey: -1738977574596
+metaSortKey: -1738977574796
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
