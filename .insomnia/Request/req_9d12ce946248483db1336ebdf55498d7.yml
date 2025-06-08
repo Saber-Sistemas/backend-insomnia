@@ -1,7 +1,7 @@
 _id: req_9d12ce946248483db1336ebdf55498d7
 type: Request
 parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
-modified: 1740613702404
+modified: 1742425721304
 created: 1738977634602
 url: https://localhost:7156/v1/usuario
 name: usuario
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-      "MantenedoraId":1,
-    	"Usuario":"maguila",
+      "MantenedoraId":2,
+    	"Usuario":"vandre2",
     	"Senha":"Ab1234*"
     }
 parameters: []

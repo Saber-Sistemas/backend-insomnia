@@ -1,9 +1,9 @@
 _id: req_f2ace66d540b453897c7704fcb880995
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1740891438674
+modified: 1742520938723
 created: 1739494836567
-url: https://localhost:7156/v1/aluno/10
+url: https://localhost:7156/v1/aluno/4
 name: aluno
 description: ""
 method: PUT
@@ -11,10 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-      "InstituicaoEnsinoId": 1,
-      "Nome": "Braian baiano III",
-    	"DataNascimento": "2022-01-05",
-    	"Rg":"3333434"
+      "Nome": "ccccc",
+    	"DataNascimento": "1998-03-03"
     }
 parameters: []
 headers:

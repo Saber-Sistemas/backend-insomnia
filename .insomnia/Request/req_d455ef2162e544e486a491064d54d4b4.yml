@@ -1,7 +1,7 @@
 _id: req_d455ef2162e544e486a491064d54d4b4
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1740254985644
+modified: 1743043654736
 created: 1739494836562
 url: https://localhost:7156/v1/aluno
 name: aluno
@@ -11,9 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-      "InstituicaoEnsinoId": 1,
-      "Nome": "Marcelo nascimento",
-    	"DataNascimento": "1991-03-02"
+      "Nome": "Viviane Vello",
+    	"DataNascimento": "2005-12-07"
     }
 parameters: []
 headers:

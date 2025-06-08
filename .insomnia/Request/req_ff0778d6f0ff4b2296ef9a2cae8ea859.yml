@@ -1,9 +1,9 @@
 _id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1740013168753
+modified: 1742427243470
 created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ian II
+url: https://localhost:7156/v1/aluno/
 name: aluno
 description: ""
 method: GET
