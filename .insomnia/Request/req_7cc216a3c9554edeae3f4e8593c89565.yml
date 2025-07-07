@@ -1,9 +1,9 @@
 _id: req_7cc216a3c9554edeae3f4e8593c89565
 type: Request
 parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
-modified: 1740261519800
+modified: 1751749118556
 created: 1738977634585
-url: https://localhost:7156/v1/usuario/?termo=renato
+url: https://localhost:7156/v1/usuario/
 name: usuario
 description: ""
 method: GET

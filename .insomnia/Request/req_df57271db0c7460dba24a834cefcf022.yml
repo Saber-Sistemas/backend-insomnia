@@ -1,7 +1,7 @@
 _id: req_df57271db0c7460dba24a834cefcf022
 type: Request
 parentId: fld_6d1908878979424eaec49720e9ccaafb
-modified: 1742427612799
+modified: 1751748887929
 created: 1738625779766
 url: https://localhost:7156/v1/funcionario
 name: funcionario
@@ -11,11 +11,10 @@ body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "Madame Aninha",
+      "Nome": "Gigante dos céus",
     	"Endereco": "sem endereço",
     	"Cachorro":"asdfad",
-    	"MunicipioId":454,
-    	"Cpf":"23768021050"
+    	"MunicipioId":454
     }
 parameters: []
 headers:
