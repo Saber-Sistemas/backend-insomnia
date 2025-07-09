@@ -1,10 +1,10 @@
 _id: req_14d70a72fcb14edca2ab85549784a88c
 type: Request
 parentId: fld_08897d4b61674d6ea892703f30021bb1
-modified: 1739586115738
+modified: 1752088895092
 created: 1739585099792
-url: https://localhost:7156/v1/instituicaoensino/grid
-name: instituicaoensino/grid
+url: https://localhost:7156/v1/instituicao-ensino/grid
+name: instituicao-ensino/grid
 description: ""
 method: GET
 body: {}

@@ -1,9 +1,9 @@
 _id: req_71eb737a698b4cf7ba06ec1ffc19ffc9
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1740891446201
+modified: 1752087575677
 created: 1739494836558
-url: https://localhost:7156/v1/aluno/2
+url: https://localhost:7156/v1/aluno/33
 name: aluno/id
 description: ""
 method: GET

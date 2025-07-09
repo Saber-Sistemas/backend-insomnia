@@ -1,10 +1,10 @@
 _id: req_827f2725f3b24830807656e5d2baf690
 type: Request
 parentId: fld_973b2b95ee194705aabb0d874e89b5f5
-modified: 1742151407608
+modified: 1752088733994
 created: 1738977634596
-url: https://localhost:7156/v1/sessao/alterarsenha
-name: sessao/alterarsenha
+url: https://localhost:7156/v1/sessao/alterar-senha
+name: sessao/alterar-senha
 description: ""
 method: PATCH
 body:
