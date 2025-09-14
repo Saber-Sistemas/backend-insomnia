@@ -1,9 +1,9 @@
 _id: req_1da9ebf1b6bd4a99bfe080a6ff62b15a
 type: Request
 parentId: fld_08897d4b61674d6ea892703f30021bb1
-modified: 1752088884817
+modified: 1757724475174
 created: 1739585099775
-url: https://localhost:7156/v1/instituicao-ensino/1
+url: https://localhost:7156/v1/instituicao-ensino/42
 name: instituicao-ensino/id
 description: ""
 method: GET

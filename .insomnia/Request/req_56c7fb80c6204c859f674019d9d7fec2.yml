@@ -1,9 +1,9 @@
 _id: req_56c7fb80c6204c859f674019d9d7fec2
 type: Request
 parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
-modified: 1741208286901
+modified: 1757556532745
 created: 1738977634611
-url: https://localhost:7156/v1/usuario/14
+url: https://localhost:7156/v1/usuario/51
 name: usuario
 description: ""
 method: PUT
@@ -12,7 +12,8 @@ body:
   text: |-
     {
     	"FuncionarioId":8,
-    	"Senha":""
+    	"Senha":"",
+    	"InstituicaoEnsino": [19]
     }
 parameters: []
 headers:

@@ -1,9 +1,9 @@
 _id: req_04f4aa4120724c02a01a37679ddd68cf
 type: Request
 parentId: fld_6d1908878979424eaec49720e9ccaafb
-modified: 1752087998067
+modified: 1757643385032
 created: 1738977605585
-url: https://localhost:7156/v1/funcionario/75
+url: https://localhost:7156/v1/funcionario/78
 name: funcionario
 description: ""
 method: PUT
@@ -14,8 +14,7 @@ body:
     	"Nome": "Outro fununcionário",
     	"WhatsApp": "",
     	"TelefonePrincipal": "1736363636",
-    	"MunicipioId":998,
-    	"Cpf":"84952498099"
+    	"MunicipioId":998
     	
     }
 parameters: []

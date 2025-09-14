@@ -1,7 +1,7 @@
 _id: req_0dbeb342e6004d9b88dd2db3ff244fb6
 type: Request
 parentId: fld_eba01c7d2751498fbaa280e5844e5c61
-modified: 1742428031571
+modified: 1757550748297
 created: 1739497188228
 url: https://localhost:7156/v1/responsavel/3
 name: responsavel
@@ -11,13 +11,14 @@ body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "Chinês da Shein",
+      "Nome": "Chinês da Shein aa",
     	"Cep": "12345678",
     	"Cpf":"27099405071",
     	"Rg": "123",
     	"MunicipioId":"48",
     	"Endereco":"Rua das compras, 1234, jardim do além",
-    	"DataNascimento":"1999-12-31"
+    	"DataNascimento":"1999-12-31",
+    	"LocalTrabalho": ""
     }
 parameters: []
 headers:
