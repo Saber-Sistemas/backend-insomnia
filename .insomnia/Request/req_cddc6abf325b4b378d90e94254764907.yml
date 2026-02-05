@@ -1,18 +1,19 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_cddc6abf325b4b378d90e94254764907
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_d9bded2defd4465895b88e65ffcaec41
+modified: 1757815656616
+created: 1741737275107
+url: https://localhost:7156/v1/aluno-responsavel/36/responsavel
+name: aluno-responsavel responsavel
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
+      "AlunoId": 1100,
+    	"ResponsavelId": 1,
+    	"ParentescoId": 1	
     }
 parameters: []
 headers:
@@ -23,7 +24,8 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.Token }}"
-metaSortKey: -1738977575296
+  disabled: false
+metaSortKey: -1738977574783.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

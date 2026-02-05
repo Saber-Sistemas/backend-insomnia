@@ -1,0 +1,26 @@
+_id: req_2eca8e5eba2e4c749ae550b5b846933c
+type: Request
+parentId: fld_3a29b9a5fd3a4b588296dbabeffe391c
+modified: 1749350030403
+created: 1749349766279
+url: https://localhost:7156/v1/teste/situacao-codigo/204
+name: teste situação codigo
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1749350027693
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

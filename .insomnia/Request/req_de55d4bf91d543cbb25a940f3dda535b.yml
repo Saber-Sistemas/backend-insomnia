@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_de55d4bf91d543cbb25a940f3dda535b
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_3d17f6b423924d31b47f45700fad56ec
+modified: 1752087778353
+created: 1742082970763
+url: https://localhost:7156/v1/ano-letivo/
+name: ano-letivo
 description: ""
 method: GET
 body: {}
@@ -15,7 +15,6 @@ headers:
 authentication: {}
 metaSortKey: -1738977574796
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

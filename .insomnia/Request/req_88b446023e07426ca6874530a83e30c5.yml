@@ -1,18 +1,18 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_88b446023e07426ca6874530a83e30c5
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_6d1908878979424eaec49720e9ccaafb
+modified: 1757644549576
+created: 1740338589184
+url: https://localhost:7156/v1/funcionario/74/telefone/29
+name: funcionario telefone
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
+    	"TelefoneTipoid":1,
+    	"numero":"14766767126"
     }
 parameters: []
 headers:
@@ -23,7 +23,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.Token }}"
-metaSortKey: -1738977575296
+metaSortKey: -1738977574692.875
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

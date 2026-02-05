@@ -1,10 +1,10 @@
-_id: req_71eb737a698b4cf7ba06ec1ffc19ffc9
+_id: req_5e1b6a7667fd494b999ab30d02f6cb4c
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850644387
-created: 1739494836558
-url: https://localhost:7156/v1/aluno/4
-name: aluno/id
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1757724947602
+created: 1740257047959
+url: https://localhost:7156/v1/instituicao-ensino/1/endereco/39
+name: instituicao-ensino/id/endereco/id
 description: ""
 method: GET
 body: {}
@@ -13,8 +13,11 @@ headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
     id: pair_1b93703002424c6d99d610bf7fc18c59
-authentication: {}
-metaSortKey: -1738977574896
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1738977574396
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

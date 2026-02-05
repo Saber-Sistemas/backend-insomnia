@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_4095111bc6bb4a4c81bfdb76c94f5969
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_79f33d61deab436cafadf182655ff4d1
+modified: 1760825539435
+created: 1760673674582
+url: https://localhost:7156/v1/matricula/?termo=ama
+name: matricula
 description: ""
 method: GET
 body: {}

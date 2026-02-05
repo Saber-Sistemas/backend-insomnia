@@ -1,0 +1,27 @@
+_id: req_3833b38453f34d0796fe9893a0eebe83
+type: Request
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1757725032054
+created: 1740257510627
+url: https://localhost:7156/v1/instituicao-ensino/1/endereco/39
+name: instituicao-ensino endereco
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1738977574096
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

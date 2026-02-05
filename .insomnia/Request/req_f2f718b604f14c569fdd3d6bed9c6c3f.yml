@@ -1,0 +1,40 @@
+_id: req_f2f718b604f14c569fdd3d6bed9c6c3f
+type: Request
+parentId: fld_4f8463ab1e8e49eeb260380e777f7d84
+modified: 1757558347510
+created: 1755648429052
+url: https://localhost:7156/v1/mantenedora/darvel
+name: mantenedora/darvel
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"RazaoSocial":"Mantenedora enzo ferrari",
+    	"NomeFantasia":"Mantenedora enzo",
+    	"Cnpj":"78899026000100",
+    	"Endereco":"rua da vitória",
+    	"MunicipioId":50,
+    	"Cep":"12341234",
+    	
+    	"InstituicaoEnsinoNome":"f40",
+    	
+    	"Usuario":"f50f50",
+    	"Senha":"Ab1234*"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1755648429052
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

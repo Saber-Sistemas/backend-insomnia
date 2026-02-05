@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_df778d093fe845358fbdffd336c54ec5
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_84cc5aebf8144b51b6b515fd813cbfca
+modified: 1740340657522
+created: 1740338752978
+url: https://localhost:7156/v1/mantenedora/1/telefone/grid/
+name: mantenedora telefone/grid
 description: ""
 method: GET
 body: {}
@@ -13,9 +13,8 @@ headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
 authentication: {}
-metaSortKey: -1738977574796
+metaSortKey: -1738977574646
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

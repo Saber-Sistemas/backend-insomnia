@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_9ee5046248f444e18a21e1cdc910826e
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_fb54d60d928f4d4d83a63da6656e7a79
+modified: 1758983481420
+created: 1741829217438
+url: https://localhost:7156/v1/curso/?termo=médio
+name: curso
 description: ""
 method: GET
 body: {}
@@ -15,7 +15,6 @@ headers:
 authentication: {}
 metaSortKey: -1738977574796
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

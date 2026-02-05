@@ -1,0 +1,26 @@
+_id: req_3dc967814f3b4e97bfd69e48d4f63187
+type: Request
+parentId: fld_eba01c7d2751498fbaa280e5844e5c61
+modified: 1741743680784
+created: 1741743571465
+url: https://localhost:7156/v1/responsavel/1/aluno/grid/?termo=donk
+name: responsavel/id/aluno/grid
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977574446
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

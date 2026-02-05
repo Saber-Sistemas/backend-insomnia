@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_208d5606d4d74d7195d531ea9cb9ce45
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_79f33d61deab436cafadf182655ff4d1
+modified: 1760825869547
+created: 1760673674587
+url: https://localhost:7156/v1/matricula/grid/?termo=ama
+name: matricula/grid
 description: ""
 method: GET
 body: {}
@@ -12,8 +12,9 @@ parameters: []
 headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
-authentication: {}
-metaSortKey: -1738977574796
+authentication:
+  type: none
+metaSortKey: -1738977574771
 isPrivate: false
 pathParameters: []
 settingStoreCookies: true

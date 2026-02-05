@@ -1,0 +1,27 @@
+_id: req_d9b3a9ff676f45f08fae4b57c7e27bc2
+type: Request
+parentId: fld_84cc5aebf8144b51b6b515fd813cbfca
+modified: 1757646497349
+created: 1740338748405
+url: https://localhost:7156/v1/mantenedora/1/telefone/23
+name: mantenedora telefone
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1738977574596
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

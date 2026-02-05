@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_8ada041754dc42e9bfa895d499ede323
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_b5c5a69cdbe94494ad86d1416254adf9
+modified: 1749350905914
+created: 1749350039807
+url: "{{ _.Dominio }}/v1/teste"
+name: teste
 description: ""
 method: GET
 body: {}
@@ -12,10 +12,12 @@ parameters: []
 headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
-authentication: {}
-metaSortKey: -1738977574796
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1749350027793
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

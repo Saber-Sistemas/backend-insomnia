@@ -1,18 +1,18 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_9404462bc95842b7a10601d042f692db
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_84cc5aebf8144b51b6b515fd813cbfca
+modified: 1757646326074
+created: 1740338764088
+url: https://localhost:7156/v1/mantenedora/1/telefone/23
+name: mantenedora telefone
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
+    	"TelefoneTipoid":4,
+    	"numero":"17999988877"
     }
 parameters: []
 headers:
@@ -23,7 +23,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.Token }}"
-metaSortKey: -1738977575296
+metaSortKey: -1738977574689.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

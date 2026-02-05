@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_822ec2a6cc4c4ef9bed0d1c481baeb28
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_4d97a59f99ab4cda9abcee7d2f0d3197
+modified: 1748176395760
+created: 1743125870463
+url: https://localhost:7156/v1/serie/?termo=educa
+name: serie
 description: ""
 method: GET
 body: {}
@@ -15,7 +15,6 @@ headers:
 authentication: {}
 metaSortKey: -1738977574796
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

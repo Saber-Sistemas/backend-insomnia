@@ -1,30 +1,29 @@
-_id: req_aadebbcfaf3c41cca99ca138e938f901
+_id: req_0ee3b41aef1a4c098b57aa489a94fa1a
 type: Request
-parentId: fld_973b2b95ee194705aabb0d874e89b5f5
-modified: 1759198135283
-created: 1738625643796
-url: https://localhost:7156/v1/sessao/entrar
-name: sessao/entrar
+parentId: fld_e65635a850544b52b4629083c6fb3a8f
+modified: 1748194423168
+created: 1743125862310
+url: https://localhost:7156/v1/sala
+name: sala
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"usuario":"vandre",
-    	"senha": "Ab1234*"
+    	"Nome": "sala 0119"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_856b226023954f6890560e66c1d5e2fd
   - name: User-Agent
     value: Insomnia/2023.5.6
-    id: pair_cd5dbd2e45004762a11165dc51eaa78c
-    disabled: false
-authentication: {}
-metaSortKey: -1740275691512
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977575496
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,10 +1,10 @@
-_id: req_71eb737a698b4cf7ba06ec1ffc19ffc9
+_id: req_3cb7c205a5904862b6645deae6f14443
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850644387
-created: 1739494836558
-url: https://localhost:7156/v1/aluno/4
-name: aluno/id
+parentId: fld_eba01c7d2751498fbaa280e5844e5c61
+modified: 1740345684323
+created: 1740338797416
+url: https://localhost:7156/v1/responsavel/1/telefone/1
+name: responsavel /id/telefone/id
 description: ""
 method: GET
 body: {}
@@ -13,8 +13,11 @@ headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
     id: pair_1b93703002424c6d99d610bf7fc18c59
-authentication: {}
-metaSortKey: -1738977574896
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1738977574689.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

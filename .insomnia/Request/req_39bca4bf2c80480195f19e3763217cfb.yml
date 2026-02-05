@@ -1,10 +1,10 @@
-_id: req_71eb737a698b4cf7ba06ec1ffc19ffc9
+_id: req_39bca4bf2c80480195f19e3763217cfb
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850644387
-created: 1739494836558
-url: https://localhost:7156/v1/aluno/4
-name: aluno/id
+parentId: fld_6d1908878979424eaec49720e9ccaafb
+modified: 1757644680807
+created: 1740338583526
+url: https://localhost:7156/v1/funcionario/74/telefone/29
+name: funcionario /id/telefone/id
 description: ""
 method: GET
 body: {}
@@ -13,8 +13,11 @@ headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
     id: pair_1b93703002424c6d99d610bf7fc18c59
-authentication: {}
-metaSortKey: -1738977574896
+authentication:
+  type: bearer
+  token: ""
+  disabled: true
+metaSortKey: -1738977574689.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

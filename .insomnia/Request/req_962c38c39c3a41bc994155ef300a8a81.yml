@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_962c38c39c3a41bc994155ef300a8a81
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+parentId: fld_e65635a850544b52b4629083c6fb3a8f
+modified: 1748194477566
+created: 1743125862216
+url: https://localhost:7156/v1/sala/?termo=nova
+name: sala
 description: ""
 method: GET
 body: {}
@@ -15,7 +15,6 @@ headers:
 authentication: {}
 metaSortKey: -1738977574796
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

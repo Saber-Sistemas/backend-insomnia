@@ -1,10 +1,10 @@
-_id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+_id: req_908a84732e0745f9b95e59d0aef616cd
 type: Request
 parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1760824456542
-created: 1739494836553
-url: https://localhost:7156/v1/aluno/?termo=ama
-name: aluno
+modified: 1741736423893
+created: 1741734936594
+url: https://localhost:7156/v1/aluno/2/responsavel/?termo=shein
+name: aluno/id/responsavel
 description: ""
 method: GET
 body: {}
@@ -13,9 +13,8 @@ headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
 authentication: {}
-metaSortKey: -1738977574796
+metaSortKey: -1738977574646
 isPrivate: false
-pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

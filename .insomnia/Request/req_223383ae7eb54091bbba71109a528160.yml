@@ -1,18 +1,19 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_223383ae7eb54091bbba71109a528160
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_fb54d60d928f4d4d83a63da6656e7a79
+modified: 1758995447612
+created: 1741829217456
+url: https://localhost:7156/v1/curso/38
+name: curso
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
+      "Nome": "a dfdfdfd teste edit",
+    		"EtapaEnsinoAnteriorId": 1,
+    	"EtapaEnsinoPosteriorId": 2
     }
 parameters: []
 headers:
@@ -21,10 +22,10 @@ headers:
   - name: User-Agent
     value: Insomnia/2023.5.6
 authentication:
-  type: bearer
-  token: "{{ _.Token }}"
+  type: none
 metaSortKey: -1738977575296
 isPrivate: false
+pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false

@@ -1,18 +1,17 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_1e8476994f604064bcc293d0611e75fe
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_e65635a850544b52b4629083c6fb3a8f
+modified: 1752088505675
+created: 1743125862359
+url: https://localhost:7156/v1/sala/8
+name: sala
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
+    	"Nome":"Sala nova"
     }
 parameters: []
 headers:

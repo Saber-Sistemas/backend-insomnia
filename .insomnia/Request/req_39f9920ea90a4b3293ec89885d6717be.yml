@@ -1,19 +1,15 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_39f9920ea90a4b3293ec89885d6717be
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_4d97a59f99ab4cda9abcee7d2f0d3197
+modified: 1752088568573
+created: 1743125862405
+url: https://localhost:7156/v1/serie/18
+name: serie
 description: ""
-method: PUT
+method: DELETE
 body:
   mimeType: application/json
-  text: |-
-    {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
-    }
+  text: ""
 parameters: []
 headers:
   - name: Content-Type
@@ -22,8 +18,9 @@ headers:
     value: Insomnia/2023.5.6
 authentication:
   type: bearer
-  token: "{{ _.Token }}"
-metaSortKey: -1738977575296
+  token: ""
+  disabled: true
+metaSortKey: -1738977574671
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

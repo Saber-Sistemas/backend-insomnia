@@ -1,0 +1,28 @@
+_id: req_cf513774852c4346a3fe5a85f8ea5002
+type: Request
+parentId: fld_9066685422ef4d36b9140404a783dd5a
+modified: 1758329625324
+created: 1758329524793
+url: https://localhost:7156/hub/usuario/negotiate
+name: New Request
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+    id: pair_23874d95a3a9417db1def62d1b30102f
+  - id: pair_ef6d3e48eb5f4d058bbd67fc5c377a07
+    name: X-InstituicaoEnsino
+    value: "1"
+    description: ""
+authentication: {}
+metaSortKey: -1758329524793
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

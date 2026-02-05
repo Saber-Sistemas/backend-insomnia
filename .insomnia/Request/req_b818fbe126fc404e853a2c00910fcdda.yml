@@ -1,30 +1,30 @@
-_id: req_aadebbcfaf3c41cca99ca138e938f901
+_id: req_b818fbe126fc404e853a2c00910fcdda
 type: Request
-parentId: fld_973b2b95ee194705aabb0d874e89b5f5
-modified: 1759198135283
-created: 1738625643796
-url: https://localhost:7156/v1/sessao/entrar
-name: sessao/entrar
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1752089041450
+created: 1740337170393
+url: https://localhost:7156/v1/instituicao-ensino/3/telefone
+name: instituicao-ensino telefone
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"usuario":"vandre",
-    	"senha": "Ab1234*"
+    	"TelefoneTipoid":1,
+    	"numero":"1111542154"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_856b226023954f6890560e66c1d5e2fd
   - name: User-Agent
     value: Insomnia/2023.5.6
-    id: pair_cd5dbd2e45004762a11165dc51eaa78c
-    disabled: false
-authentication: {}
-metaSortKey: -1740275691512
+authentication:
+  type: bearer
+  token: "{{ _.Token }}"
+  disabled: false
+metaSortKey: -1738977573996
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

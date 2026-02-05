@@ -1,0 +1,49 @@
+_id: req_d20ebfef3cbb433091df25762e5fef13
+type: Request
+parentId: fld_fd7fb153ab1d42dca9518dac7b73b024
+modified: 1757558044676
+created: 1756779061965
+url: https://localhost:7156/v1/usuario/15/instituicao-ensino
+name: usuario instituicao-ensino
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [
+        {
+            "InstituicaoEnsinoId": 1,
+            "Selecionado": true
+        },
+        {
+            "InstituicaoEnsinoId": 2,
+            "Selecionado": true
+        },
+        {
+            "InstituicaoEnsinoId": 3,
+            "Selecionado": true
+        },
+        {
+            "InstituicaoEnsinoId": 4,
+            "Selecionado": false
+        },
+        {
+            "InstituicaoEnsinoId": 5,
+            "Selecionado": false
+        }
+    ]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1738977574371
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

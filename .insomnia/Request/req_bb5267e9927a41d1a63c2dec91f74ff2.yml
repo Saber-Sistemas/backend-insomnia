@@ -1,18 +1,21 @@
-_id: req_f2ace66d540b453897c7704fcb880995
+_id: req_bb5267e9927a41d1a63c2dec91f74ff2
 type: Request
-parentId: fld_a0b921ca100d451a9cc0502305056cfd
-modified: 1757850662812
-created: 1739494836567
-url: https://localhost:7156/v1/aluno/4
-name: aluno
+parentId: fld_08897d4b61674d6ea892703f30021bb1
+modified: 1757724874283
+created: 1740257012128
+url: https://localhost:7156/v1/instituicao-ensino/1/endereco/39
+name: instituicao-ensino endereco
 description: ""
 method: PUT
 body:
   mimeType: application/json
   text: |-
     {
-      "Nome": "kaile Willy de freitas",
-    	"DataNascimento": "1998-03-03"
+    	"Apelido":"casa do cachorro222",
+    	"Endereco":"Avenida hot dog, 11, canil",
+    	"MunicipioId":88,
+    	"Cep":"33431544",
+    	"Email":"auau@uol.com.br"
     }
 parameters: []
 headers:
@@ -23,7 +26,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.Token }}"
-metaSortKey: -1738977575296
+metaSortKey: -1738977574496
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
