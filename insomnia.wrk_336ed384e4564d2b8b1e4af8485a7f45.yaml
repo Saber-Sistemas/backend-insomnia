@@ -4081,6 +4081,29 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: ""
+            name: New Request
+            meta:
+              id: req_0ca8e448ff4c42cc8fc6fd7acd0055c7
+              created: 1770683303484
+              modified: 1770683303484
+              isPrivate: false
+              description: ""
+              sortKey: -1770683303484
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
     environment:
       Dominio: https://darvel-api-fwdkdbcjcpbvf6bs.canadacentral-01.azurewebsites.net
       Token: cdd
@@ -4141,6 +4164,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_caabc50a7458edda629e167aa10c5f4682e51a0e
+    created: 1770683266082
+    modified: 1770683266082
 environments:
   name: Base Environment
   meta:
