@@ -1,0 +1,4153 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Darvel - Backend
+meta:
+  id: wrk_336ed384e4564d2b8b1e4af8485a7f45
+  created: 1737682863436
+  modified: 1737682863436
+  description: ""
+collection:
+  - name: Local
+    meta:
+      id: fld_d415e02312ec4dda83718b2ed871d707
+      created: 1737915128242
+      modified: 1759074829606
+      sortKey: -1738447988164.75
+      description: ""
+    children:
+      - name: funcionario
+        meta:
+          id: fld_6d1908878979424eaec49720e9ccaafb
+          created: 1738977555179
+          modified: 1739494864177
+          sortKey: -1739494853722
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/funcionario/
+            name: funcionario
+            meta:
+              id: req_a24c9ff2ea8041a6ac790a5efd6ec818
+              created: 1737903981208
+              modified: 1741096327758
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/78
+            name: funcionario/id
+            meta:
+              id: req_8ab59c8afea54716af3229ad2330b038
+              created: 1738526759749
+              modified: 1757643456127
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario
+            name: funcionario
+            meta:
+              id: req_df57271db0c7460dba24a834cefcf022
+              created: 1738625779766
+              modified: 1751748887929
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "Gigante dos céus",
+                	"Endereco": "sem endereço",
+                	"Cachorro":"asdfad",
+                	"MunicipioId":454
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/78
+            name: funcionario
+            meta:
+              id: req_04f4aa4120724c02a01a37679ddd68cf
+              created: 1738977605585
+              modified: 1757643385032
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Nome": "Outro fununcionário",
+                	"WhatsApp": "",
+                	"TelefonePrincipal": "1736363636",
+                	"MunicipioId":998
+                	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/78
+            name: funcionario
+            meta:
+              id: req_5ce799c7fb484b0793585c9121d0723e
+              created: 1739044535652
+              modified: 1757643550521
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/grid
+            name: funcionario/grid
+            meta:
+              id: req_c0c004f0469448af91cd8158a72122e5
+              created: 1739230552767
+              modified: 1739580062101
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/74/telefone
+            name: funcionario telefone
+            meta:
+              id: req_79c9cabc41184331862c06faca3eae60
+              created: 1740338564237
+              modified: 1752088034831
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574694.4375
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":1,
+                	"numero":"14766767128"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/74/telefone/29
+            name: funcionario telefone
+            meta:
+              id: req_c0fd6be2b9db445e967da28d758b0a8a
+              created: 1740338569322
+              modified: 1757644788191
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574646
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/74/telefone/grid/
+            name: funcionario telefone/grid
+            meta:
+              id: req_31c223c340254105903223d8059ecd98
+              created: 1740338573578
+              modified: 1757644758088
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574671
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/74/telefone/?termo=997
+            name: funcionario telefone
+            meta:
+              id: req_79c07ab64cd041029c261b3b0ee0396e
+              created: 1740338578422
+              modified: 1757644712022
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574683.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/74/telefone/29
+            name: funcionario /id/telefone/id
+            meta:
+              id: req_39bca4bf2c80480195f19e3763217cfb
+              created: 1740338583526
+              modified: 1757644680807
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574689.75
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/funcionario/74/telefone/29
+            name: funcionario telefone
+            meta:
+              id: req_88b446023e07426ca6874530a83e30c5
+              created: 1740338589184
+              modified: 1757644549576
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574692.875
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":1,
+                	"numero":"14766767126"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: usuario
+        meta:
+          id: fld_fd7fb153ab1d42dca9518dac7b73b024
+          created: 1738977634582
+          modified: 1738978813288
+          sortKey: -1738977563029.25
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/usuario/
+            name: usuario
+            meta:
+              id: req_7cc216a3c9554edeae3f4e8593c89565
+              created: 1738977634585
+              modified: 1751749118556
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/41
+            name: usuario/id
+            meta:
+              id: req_8dbc0338971e40738bc0256f4d5c39aa
+              created: 1738977634591
+              modified: 1757556663118
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario
+            name: usuario
+            meta:
+              id: req_9d12ce946248483db1336ebdf55498d7
+              created: 1738977634602
+              modified: 1757552754159
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Usuario":"novouserdfdfd",
+                	"Senha":"Ab1234*"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/51
+            name: usuario
+            meta:
+              id: req_56c7fb80c6204c859f674019d9d7fec2
+              created: 1738977634611
+              modified: 1757556532745
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575196
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"FuncionarioId":8,
+                	"Senha":"",
+                	"InstituicaoEnsino": [19]
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/53
+            name: usuario
+            meta:
+              id: req_1506eb5d4b4a46c49caea28cfe5dccfd
+              created: 1739045325685
+              modified: 1756862267628
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/grid/?termo=ren
+            name: usuario/grid
+            meta:
+              id: req_d855c2745dde47698da8ff65d56aaf9d
+              created: 1739229770584
+              modified: 1740274916095
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574746
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/1/recurso-acao
+            name: usuario recurso-acao
+            meta:
+              id: req_59cd7b19f9554950aad60b0fe9443210
+              created: 1740708695466
+              modified: 1757557896398
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574596
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/15/recurso-acao
+            name: usuario recurso-acao
+            meta:
+              id: req_8d7b5ebbe95f4ab1964eb14584ce90ac
+              created: 1742952659119
+              modified: 1757558002033
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574571
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                [
+                    {
+                        "RecursoAcaoId": 1,
+                        "Selecionado": true
+                    },
+                    {
+                        "RecursoAcaoId": 2,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 3,
+                        "Selecionado": true
+                    },
+                    {
+                        "RecursoAcaoId": 4,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 5,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 6,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 7,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 8,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 9,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 10,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 18,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 19,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 20,
+                        "Selecionado": true
+                    },
+                    {
+                        "RecursoAcaoId": 21,
+                        "Selecionado": true
+                    },
+                    {
+                        "RecursoAcaoId": 22,
+                        "Selecionado": true
+                    },
+                    {
+                        "RecursoAcaoId": 23,
+                        "Selecionado": true
+                    },
+                    {
+                        "RecursoAcaoId": 24,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 25,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 26,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 27,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 28,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 29,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 30,
+                        "Selecionado": false
+                    },
+                    {
+                        "RecursoAcaoId": 31,
+                        "Selecionado": false
+                    }
+                ]
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/1/instituicao-ensino
+            name: usuario instituicao-ensino
+            meta:
+              id: req_8c234c43f82e4942a8b09d51aa8080c8
+              created: 1756778924280
+              modified: 1757557960033
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574471
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/usuario/15/instituicao-ensino
+            name: usuario instituicao-ensino
+            meta:
+              id: req_d20ebfef3cbb433091df25762e5fef13
+              created: 1756779061965
+              modified: 1757558044676
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574371
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                [
+                    {
+                        "InstituicaoEnsinoId": 1,
+                        "Selecionado": true
+                    },
+                    {
+                        "InstituicaoEnsinoId": 2,
+                        "Selecionado": true
+                    },
+                    {
+                        "InstituicaoEnsinoId": 3,
+                        "Selecionado": true
+                    },
+                    {
+                        "InstituicaoEnsinoId": 4,
+                        "Selecionado": false
+                    },
+                    {
+                        "InstituicaoEnsinoId": 5,
+                        "Selecionado": false
+                    }
+                ]
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: aluno
+        meta:
+          id: fld_a0b921ca100d451a9cc0502305056cfd
+          created: 1739494836551
+          modified: 1760824434899
+          sortKey: -1739494853972
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/aluno/?termo=ama
+            name: aluno
+            meta:
+              id: req_ff0778d6f0ff4b2296ef9a2cae8ea859
+              created: 1739494836553
+              modified: 1760824456542
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno/4
+            name: aluno/id
+            meta:
+              id: req_71eb737a698b4cf7ba06ec1ffc19ffc9
+              created: 1739494836558
+              modified: 1757850644387
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno
+            name: aluno
+            meta:
+              id: req_d455ef2162e544e486a491064d54d4b4
+              created: 1739494836562
+              modified: 1757558404760
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "Camila Mendonça de Souza",
+                	"DataNascimento": "1983-05-18"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno/4
+            name: aluno
+            meta:
+              id: req_f2ace66d540b453897c7704fcb880995
+              created: 1739494836567
+              modified: 1757850662812
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "kaile Willy de freitas",
+                	"DataNascimento": "1998-03-03"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno/36
+            name: aluno
+            meta:
+              id: req_e8df6c7ba1164d68a8a39c5e87924728
+              created: 1739494836571
+              modified: 1757561465043
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno/grid/?termo=silv carvalho
+            name: aluno/grid
+            meta:
+              id: req_5551cb0a34084398a9d58189719c9024
+              created: 1739494836575
+              modified: 1757805853649
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno/2/responsavel/?termo=shein
+            name: aluno/id/responsavel
+            meta:
+              id: req_908a84732e0745f9b95e59d0aef616cd
+              created: 1741734936594
+              modified: 1741736423893
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574646
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno/2/responsavel/grid/?termo=dono
+            name: aluno/id/responsavel/grid
+            meta:
+              id: req_3328a460a2954202a9aa67af32dba0a9
+              created: 1741734964095
+              modified: 1760825983823
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574596
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: responsavel
+        meta:
+          id: fld_eba01c7d2751498fbaa280e5844e5c61
+          created: 1739497188211
+          modified: 1739497188211
+          sortKey: -1739494853697
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/responsavel/?termo=man
+            name: responsavel
+            meta:
+              id: req_eb1bedd1923648dabc9386a7f2865e0a
+              created: 1739497188213
+              modified: 1740015945335
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/3
+            name: responsavel/id
+            meta:
+              id: req_85e0f15f69484e8daf78cb12f984b196
+              created: 1739497188218
+              modified: 1739499412951
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel
+            name: responsavel
+            meta:
+              id: req_a7a4aecbd5524615a40b7d6dab94d218
+              created: 1739497188223
+              modified: 1752088424738
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "Rocket man",
+                	"Cep": "12345678",
+                	"Cpf":"62261338058",
+                	"Rg": "123",
+                	"MunicipioId":"36",
+                	"Endereco":"Rua das compras, 1234, jardim do além",
+                	"DataNascimento":"1999-12-31"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/3
+            name: responsavel
+            meta:
+              id: req_0dbeb342e6004d9b88dd2db3ff244fb6
+              created: 1739497188228
+              modified: 1757550748297
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "Chinês da Shein aa",
+                	"Cep": "12345678",
+                	"Cpf":"27099405071",
+                	"Rg": "123",
+                	"MunicipioId":"48",
+                	"Endereco":"Rua das compras, 1234, jardim do além",
+                	"DataNascimento":"1999-12-31",
+                	"LocalTrabalho": ""
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/11
+            name: responsavel
+            meta:
+              id: req_f384640364d247f39313fc97a9012155
+              created: 1739497188232
+              modified: 1752088433045
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/grid
+            name: responsavel/grid
+            meta:
+              id: req_a57f336e44184e48be25c9a29cdc14c2
+              created: 1739497188238
+              modified: 1739580073298
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/telefone/18
+            name: responsavel telefone
+            meta:
+              id: req_ef95352f4ad947a5a76f4ad96f166dd7
+              created: 1740338785214
+              modified: 1757814379338
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574646
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/telefone/grid
+            name: responsavel telefone/grid
+            meta:
+              id: req_b1be82f8aecc4b29a65403d1e5e47d77
+              created: 1740338789977
+              modified: 1740340791396
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574671
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/telefone
+            name: responsavel telefone
+            meta:
+              id: req_c46672d3906b4726adbf1931254d7dc1
+              created: 1740338793310
+              modified: 1740340785463
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574683.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/telefone/1
+            name: responsavel /id/telefone/id
+            meta:
+              id: req_3cb7c205a5904862b6645deae6f14443
+              created: 1740338797416
+              modified: 1740345684323
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574689.75
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/telefone/8
+            name: responsavel telefone
+            meta:
+              id: req_7f13cf5dcf1d4ab4b1245cfb14699899
+              created: 1740338801161
+              modified: 1741213396302
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574692.875
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":4,
+                	"numero":"17999988877"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/telefone
+            name: responsavel telefone
+            meta:
+              id: req_d209a441b2d843e3aa629a3393dbe7dd
+              created: 1740338804996
+              modified: 1752088473663
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574694.4375
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":4,
+                	"numero":"17999988866"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/2/aluno/?termo=ppp
+            name: responsavel/id/aluno
+            meta:
+              id: req_a9dc3c2a5ac34ac0b57c7f314de0e35a
+              created: 1741743561909
+              modified: 1741743639351
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574546
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/responsavel/1/aluno/grid/?termo=donk
+            name: responsavel/id/aluno/grid
+            meta:
+              id: req_3dc967814f3b4e97bfd69e48d4f63187
+              created: 1741743571465
+              modified: 1741743680784
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574446
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: mantenedora
+        meta:
+          id: fld_84cc5aebf8144b51b6b515fd813cbfca
+          created: 1739585089134
+          modified: 1739585089134
+          sortKey: -1739494853715.75
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/mantenedora/3
+            name: mantenedora/id
+            meta:
+              id: req_71a6ca280ae2444eb868a64226285185
+              created: 1739585089142
+              modified: 1739587286012
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/53
+            name: mantenedora
+            meta:
+              id: req_7a43cb15e95c4da8a6f5e1c91ef8e760
+              created: 1739585089151
+              modified: 1757646033455
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"RazaoSocial":"Atualiza empresa - LTDA",
+                	"NomeFantasia":"Atualiza empresa soluções",
+                	"Cnpj":"97654394000133",
+                	"Endereco":"rua da vitória",
+                	"MunicipioId":99,
+                	"Cep":"12341234"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/grid
+            name: mantenedora/grid
+            meta:
+              id: req_36f4f21195b14a149d62ecf37db0c63a
+              created: 1739585089160
+              modified: 1739585252487
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/1/telefone/23
+            name: mantenedora telefone
+            meta:
+              id: req_d9b3a9ff676f45f08fae4b57c7e27bc2
+              created: 1740338748405
+              modified: 1757646497349
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574596
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/1/telefone/grid/
+            name: mantenedora telefone/grid
+            meta:
+              id: req_df778d093fe845358fbdffd336c54ec5
+              created: 1740338752978
+              modified: 1740340657522
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574646
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/1/telefone
+            name: mantenedora telefone
+            meta:
+              id: req_9f9c8608422048dd8b399c6adbf2515f
+              created: 1740338756638
+              modified: 1740340665172
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574671
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/1/telefone/3
+            name: mantenedora /id/telefone/id
+            meta:
+              id: req_4fcbb20df2ce4e5688ce56a3b6c13d92
+              created: 1740338760377
+              modified: 1752088187105
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574683.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/1/telefone/23
+            name: mantenedora telefone
+            meta:
+              id: req_9404462bc95842b7a10601d042f692db
+              created: 1740338764088
+              modified: 1757646326074
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574689.75
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":4,
+                	"numero":"17999988877"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/mantenedora/1/telefone
+            name: mantenedora telefone
+            meta:
+              id: req_bbc422693dec4dcb911a99fe7c1d33e2
+              created: 1740338767636
+              modified: 1752088228300
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574692.875
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":3,
+                	"numero":"2345234524"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: instituicao-ensino
+        meta:
+          id: fld_08897d4b61674d6ea892703f30021bb1
+          created: 1739585099767
+          modified: 1752088803991
+          sortKey: -1739494853718.875
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/instituicao-ensino/
+            name: instituicao-ensino
+            meta:
+              id: req_1183debd2aac4ec6851462d61c8da731
+              created: 1739585099770
+              modified: 1752088889594
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/42
+            name: instituicao-ensino/id
+            meta:
+              id: req_1da9ebf1b6bd4a99bfe080a6ff62b15a
+              created: 1739585099775
+              modified: 1757724475174
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino
+            name: instituicao-ensino
+            meta:
+              id: req_a1921c83d8c14388a376bb9455c5648e
+              created: 1739585099779
+              modified: 1752088850581
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "Quartel general escolar"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/39
+            name: instituicao-ensino
+            meta:
+              id: req_0e1f3838735c4c6782a4c892bfeb9397
+              created: 1739585099783
+              modified: 1757724855631
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Nome": "Escola dos programadores"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/42
+            name: instituicao-ensino
+            meta:
+              id: req_81869a7943604e87815cd5c146d22834
+              created: 1739585099788
+              modified: 1757724591115
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/grid
+            name: instituicao-ensino/grid
+            meta:
+              id: req_14d70a72fcb14edca2ab85549784a88c
+              created: 1739585099792
+              modified: 1752088895092
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/endereco
+            name: instituicao-ensino endereco
+            meta:
+              id: req_d8dafe6778a24f0585e5995809f4fca4
+              created: 1740254178675
+              modified: 1752088992103
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574596
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Apelido":"casa do cachorro",
+                	"Endereco":"Avenida hot dog, 11, canil",
+                	"MunicipioId":88,
+                	"Cep":"33431544",
+                	"Email":"auau@uol.com.br"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/endereco/39
+            name: instituicao-ensino endereco
+            meta:
+              id: req_bb5267e9927a41d1a63c2dec91f74ff2
+              created: 1740257012128
+              modified: 1757724874283
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574496
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Apelido":"casa do cachorro222",
+                	"Endereco":"Avenida hot dog, 11, canil",
+                	"MunicipioId":88,
+                	"Cep":"33431544",
+                	"Email":"auau@uol.com.br"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/endereco/39
+            name: instituicao-ensino/id/endereco/id
+            meta:
+              id: req_5e1b6a7667fd494b999ab30d02f6cb4c
+              created: 1740257047959
+              modified: 1757724947602
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574396
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/endereco/
+            name: instituicao-ensino endereco
+            meta:
+              id: req_562defb9b870453c8753a396e4cf3f56
+              created: 1740257061911
+              modified: 1757814182058
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574296
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/endereco/grid
+            name: instituicao-ensino endereco/grid
+            meta:
+              id: req_ed4c9c14915e42779e11c9a4b7d191b2
+              created: 1740257454036
+              modified: 1757814176554
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574196
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/endereco/39
+            name: instituicao-ensino endereco
+            meta:
+              id: req_3833b38453f34d0796fe9893a0eebe83
+              created: 1740257510627
+              modified: 1757725032054
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574096
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/3/telefone
+            name: instituicao-ensino telefone
+            meta:
+              id: req_b818fbe126fc404e853a2c00910fcdda
+              created: 1740337170393
+              modified: 1752089041450
+              isPrivate: false
+              description: ""
+              sortKey: -1738977573996
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":1,
+                	"numero":"1111542154"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/3/telefone/38
+            name: instituicao-ensino telefone
+            meta:
+              id: req_40029c290e7842f6a04640e20ae3a00d
+              created: 1740337186098
+              modified: 1757725542073
+              isPrivate: false
+              description: ""
+              sortKey: -1738977573896
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"TelefoneTipoid":2,
+                	"numero":"17999988877"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/3/telefone/38
+            name: instituicao-ensino/id/telefone/id
+            meta:
+              id: req_bdc1efa2f81b4e86ba8cab0b11ec4e6c
+              created: 1740337195287
+              modified: 1757725576773
+              isPrivate: false
+              description: ""
+              sortKey: -1738977573796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/3/telefone/?termo=123
+            name: instituicao-ensino telefone
+            meta:
+              id: req_515a2efa259943a09295988c2a07453f
+              created: 1740337201927
+              modified: 1757725593013
+              isPrivate: false
+              description: ""
+              sortKey: -1738977573696
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/1/telefone/grid/?termo=12-3
+            name: instituicao-ensino telefone/grid
+            meta:
+              id: req_1ac163e119a442eb975daf930c43180b
+              created: 1740337208647
+              modified: 1752089070663
+              isPrivate: false
+              description: ""
+              sortKey: -1738977573596
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/instituicao-ensino/3/telefone/38
+            name: instituicao-ensino telefone
+            meta:
+              id: req_ba16656055534d77a2eb06e228586618
+              created: 1740337214946
+              modified: 1757725689666
+              isPrivate: false
+              description: ""
+              sortKey: -1738977573496
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: parentesco
+        meta:
+          id: fld_a6aae2a1e387453dba5d5ac75791d275
+          created: 1739652974047
+          modified: 1739652974047
+          sortKey: -1739494853703.25
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/parentesco/
+            name: parentesco
+            meta:
+              id: req_98863b2a490e4cc99586422ec3d93e95
+              created: 1739652974050
+              modified: 1739652996701
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: aluno-responsavel
+        meta:
+          id: fld_d9bded2defd4465895b88e65ffcaec41
+          created: 1739928788482
+          modified: 1752087634370
+          sortKey: -1739494853872
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/aluno-responsavel/responsavel
+            name: aluno-responsavel responsavel
+            meta:
+              id: req_3ffb06532cae4fcd9a67778f6517b942
+              created: 1739650727733
+              modified: 1757815214995
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "AlunoId": 1100,
+                	"ResponsavelId": 1,
+                	"ParentescoId": 1	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno-responsavel/36/responsavel
+            name: aluno-responsavel responsavel
+            meta:
+              id: req_e04a92abac42453eb5ad41fc7b393a39
+              created: 1739928788509
+              modified: 1757815667776
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574781.9375
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno-responsavel/36/responsavel
+            name: aluno-responsavel responsavel
+            meta:
+              id: req_cddc6abf325b4b378d90e94254764907
+              created: 1741737275107
+              modified: 1757815656616
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574783.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "AlunoId": 1100,
+                	"ResponsavelId": 1,
+                	"ParentescoId": 1	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno-responsavel/aluno
+            name: aluno-responsavel aluno
+            meta:
+              id: req_b6ec6956a7b440d58a5ffd732f3ca64d
+              created: 1753320451420
+              modified: 1753320586793
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574780.375
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "AlunoId": 32,
+                	"ResponsavelId": 1,
+                	"ParentescoId": 1	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno-responsavel/21/aluno
+            name: aluno-responsavel aluno
+            meta:
+              id: req_a5744dbe560f4c68b353ab4836e1fb40
+              created: 1753320511307
+              modified: 1753320516285
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574777.25
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "AlunoId": 2,
+                	"ResponsavelId": 1,
+                	"ParentescoId": 1	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/aluno-responsavel/21/aluno
+            name: aluno-responsavel aluno
+            meta:
+              id: req_525676ec290047fca996363076215f42
+              created: 1753320532599
+              modified: 1753320573612
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574695.2188
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: municipio
+        meta:
+          id: fld_cdf5f5cff2fd4bb8bda9c293e592220f
+          created: 1740016350963
+          modified: 1740016350963
+          sortKey: -1739494853706.375
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/municipio/?termo=são&paginaNumero=1&paginaQuantidade=10
+            name: municipio
+            meta:
+              id: req_d9e0f11f20b24136a099ddfb66f3f653
+              created: 1740016350966
+              modified: 1740638315831
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: sessao
+        meta:
+          id: fld_973b2b95ee194705aabb0d874e89b5f5
+          created: 1740275672157
+          modified: 1759074829606
+          sortKey: -1739236208363.125
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/sessao/entrar
+            name: sessao/entrar
+            meta:
+              id: req_aadebbcfaf3c41cca99ca138e938f901
+              created: 1738625643796
+              modified: 1759198135283
+              isPrivate: false
+              description: ""
+              sortKey: -1740275691512
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"usuario":"vandre",
+                	"senha": "Ab1234*"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sessao/alterar-senha
+            name: sessao/alterar-senha
+            meta:
+              id: req_827f2725f3b24830807656e5d2baf690
+              created: 1738977634596
+              modified: 1752088733994
+              isPrivate: false
+              description: ""
+              sortKey: -1740080490975.75
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"SenhaAtual": "Ab1234*",
+                	"SenhaNova": "Ab1234*"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sessao/sair
+            name: sessao/sair
+            meta:
+              id: req_badbeaf8fdac4189979b8f9c838622e3
+              created: 1740275707540
+              modified: 1740613763451
+              isPrivate: false
+              description: ""
+              sortKey: -1740178091243.875
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sessao/instituicao-ensino
+            name: sessao/instituicao-ensino
+            meta:
+              id: req_bfc96c2c103a48a2a5160fd0dbce4fec
+              created: 1742605958034
+              modified: 1752088746205
+              isPrivate: false
+              description: ""
+              sortKey: -1739934090573.5625
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sessao/alterar-instituicao-ensino
+            name: sessao/alterar-instituicao-ensino
+            meta:
+              id: req_bc4d5ec4dfcf478f808dbe0475c16fe4
+              created: 1742607615436
+              modified: 1759074827833
+              isPrivate: false
+              description: ""
+              sortKey: -1739787690171.375
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"InstituicaoEnsinoId": 43
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            scripts:
+              afterResponse: |
+                // Pega o JSON da resposta
+                const jsonBody = insomnia.response.json();
+
+                // Salva de volta no ambiente
+                insomnia.environment.set("instituicaoEnsinoId", jsonBody.id);
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sessao/recurso-acao
+            name: sessao/recurso-acao
+            meta:
+              id: req_ad8c815e97b2401fad1a2f5588e14f7d
+              created: 1750818625112
+              modified: 1752088757647
+              isPrivate: false
+              description: ""
+              sortKey: -1739860890372.4688
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sessao/ano-letivo
+            name: sessao/ano-letivo
+            meta:
+              id: req_603b5d77ad79462b9dd1434b83df6ee2
+              created: 1759194496316
+              modified: 1759194506729
+              isPrivate: false
+              description: ""
+              sortKey: -1739897490473.0156
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: telefone-tipo
+        meta:
+          id: fld_152ef3fda6dc4410b8694e16bd156098
+          created: 1740336578411
+          modified: 1752088697117
+          sortKey: -1739106885696.1875
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/telefone-tipo/?Termo=bal
+            name: telefone-tipo
+            meta:
+              id: req_084c924af44c44ecb2d1c91fc9bdc9c8
+              created: 1740336622554
+              modified: 1752088709002
+              isPrivate: false
+              description: ""
+              sortKey: -1740336622554
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: perfil
+        meta:
+          id: fld_669c8f6b3525444aaf10dce713f8eb8b
+          created: 1740637839628
+          modified: 1740637839628
+          sortKey: -1739494853704.8125
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/perfil
+            name: perfil
+            meta:
+              id: req_44d374d9ab944357a5bbdd7cb42782ef
+              created: 1740637839631
+              modified: 1741820405165
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/perfil/1/recurso-acao
+            name: perfil recurso-acao
+            meta:
+              id: req_a71aaea6d4da4a2f92af2c42e89c6c66
+              created: 1740706831658
+              modified: 1756861816510
+              isPrivate: false
+              description: ""
+              sortKey: -1739236232431.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: recurso-acao
+        meta:
+          id: fld_b7ed167f226f4b579fb23b38608f62d1
+          created: 1741821794281
+          modified: 1752088351242
+          sortKey: -1739494853698.5625
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/recurso-acao
+            name: recurso-acao
+            meta:
+              id: req_d6234002f801414c9825cac4705eb40b
+              created: 1741821794284
+              modified: 1752088360919
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: nivel-escolar
+        meta:
+          id: fld_50e7f759fab44623b46ba12690b3a11c
+          created: 1741826906950
+          modified: 1752088257370
+          sortKey: -1739494853705.5938
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/nivel-escolar/
+            name: nivel-escolar
+            meta:
+              id: req_e2cc3bd70023476082ec39cf76f19fd6
+              created: 1741826906954
+              modified: 1752088269516
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: curso
+        meta:
+          id: fld_fb54d60d928f4d4d83a63da6656e7a79
+          created: 1741829217434
+          modified: 1758983288850
+          sortKey: -1739494853734.5
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/curso/?termo=médio
+            name: curso
+            meta:
+              id: req_9ee5046248f444e18a21e1cdc910826e
+              created: 1741829217438
+              modified: 1758983481420
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/curso/23
+            name: curso/id
+            meta:
+              id: req_10dce3a1dd884791a018a8cb27386a31
+              created: 1741829217444
+              modified: 1758983473645
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/curso
+            name: curso
+            meta:
+              id: req_55fd79240720481ca1ec0f425ab3657a
+              created: 1741829217450
+              modified: 1758989719515
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "NivelEscolarId": 2,
+                  "Nome": "etapa teste",
+                	"EtapaEnsinoAnteriorId": 4,
+                	"EtapaEnsinoPosteriorId": 25
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/curso/38
+            name: curso
+            meta:
+              id: req_223383ae7eb54091bbba71109a528160
+              created: 1741829217456
+              modified: 1758995447612
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "a dfdfdfd teste edit",
+                		"EtapaEnsinoAnteriorId": 1,
+                	"EtapaEnsinoPosteriorId": 2
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/curso/39
+            name: curso
+            meta:
+              id: req_99cbbc742e364567a7a8a1b783f4a0c7
+              created: 1741829217461
+              modified: 1758995484532
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/curso/grid/?termo=mestr
+            name: curso/grid
+            meta:
+              id: req_e0161974fe2f4ce68f43d3ed6e8662df
+              created: 1741829217469
+              modified: 1760826304451
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: matricula-situacao
+        meta:
+          id: fld_a30a35e28b7147f4a48756cc3f323939
+          created: 1741913366321
+          modified: 1760816862509
+          sortKey: -1739494853708.7188
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/matricula-situacao/
+            name: matricula-situacao
+            meta:
+              id: req_86f356834aac493aa3f2601280ddca75
+              created: 1741913366323
+              modified: 1752088296618
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: progressao-situacao
+        meta:
+          id: fld_11e6289a3d9f44edac6eccd00884aa86
+          created: 1741914293045
+          modified: 1752088333122
+          sortKey: -1739494853700.9062
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/progressao-situacao/
+            name: progressao-situacao
+            meta:
+              id: req_35a5270ac353463f9f9cd25cd02b024e
+              created: 1741914293047
+              modified: 1752088341385
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: turno
+        meta:
+          id: fld_2dd18d55407a4748a1ef16923ef68617
+          created: 1741915249589
+          modified: 1741915267159
+          sortKey: -1739042224362.7188
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/turno/
+            name: turno
+            meta:
+              id: req_16270406e71e41699edecc7989581b51
+              created: 1741915249592
+              modified: 1741915282274
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: ano-letivo-situacao
+        meta:
+          id: fld_f34f9ae4bceb4989932667332efbc469
+          created: 1741916024614
+          modified: 1752087817646
+          sortKey: -1739494853759.5
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/ano-letivo-situacao/
+            name: ano-letivo-situacao
+            meta:
+              id: req_02e10571bbae4b979ad858e0a00f1fa5
+              created: 1741916024616
+              modified: 1752087828755
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: ano-letivo
+        meta:
+          id: fld_3d17f6b423924d31b47f45700fad56ec
+          created: 1742082970759
+          modified: 1752087709136
+          sortKey: -1739494853765.75
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/ano-letivo/
+            name: ano-letivo
+            meta:
+              id: req_de55d4bf91d543cbb25a940f3dda535b
+              created: 1742082970763
+              modified: 1752087778353
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/ano-letivo/13
+            name: ano-letivo/id
+            meta:
+              id: req_267a2886adec40e68755677d4c57f0ba
+              created: 1742082970767
+              modified: 1759074846069
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/ano-letivo
+            name: ano-letivo
+            meta:
+              id: req_1d97f61c56a742c28aeed5a3a5c54302
+              created: 1742082970772
+              modified: 1759073906163
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Ano": 2028,
+                	"AnoLetivoSituacaoId": 1,
+                	"Descricao": "teste descrição",
+                	"DataCorteEtario": "2028-04-08"	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/ano-letivo/11
+            name: ano-letivo
+            meta:
+              id: req_12d34b5b4bc448e1a9069f9aafe75514
+              created: 1742082970776
+              modified: 1759074795145
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"AnoLetivoSituacaoId": 1,
+                	"Descricao": "teste descrição",
+                	"DataCorteEtario": "2027-03-31"	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/ano-letivo/9
+            name: ano-letivo
+            meta:
+              id: req_7f1c58bfda7943a0b14148487b7f436b
+              created: 1742082970780
+              modified: 1757641899376
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/ano-letivo/grid/?termo=
+            name: ano-letivo/grid
+            meta:
+              id: req_e45be36de713413b90609c2a72adbd36
+              created: 1742082970784
+              modified: 1759074888805
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: sala
+        meta:
+          id: fld_e65635a850544b52b4629083c6fb3a8f
+          created: 1743125862192
+          modified: 1743125934130
+          sortKey: -1739365531030.0625
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/sala/?termo=nova
+            name: sala
+            meta:
+              id: req_962c38c39c3a41bc994155ef300a8a81
+              created: 1743125862216
+              modified: 1748194477566
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sala/8
+            name: sala/id
+            meta:
+              id: req_055356c1a062482880dca851e28143cc
+              created: 1743125862266
+              modified: 1752088513640
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sala
+            name: sala
+            meta:
+              id: req_0ee3b41aef1a4c098b57aa489a94fa1a
+              created: 1743125862310
+              modified: 1748194423168
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Nome": "sala 0119"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sala/8
+            name: sala
+            meta:
+              id: req_1e8476994f604064bcc293d0611e75fe
+              created: 1743125862359
+              modified: 1752088505675
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"Nome":"Sala nova"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sala/grid/?termo=sala
+            name: sala/grid
+            meta:
+              id: req_f087432bd6a645f2afbb21743daba711
+              created: 1743125862453
+              modified: 1748194499627
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/sala/8
+            name: sala
+            meta:
+              id: req_f755731a062c458abe5629396c4ab4bf
+              created: 1743126105852
+              modified: 1752088524853
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574671
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: serie
+        meta:
+          id: fld_4d97a59f99ab4cda9abcee7d2f0d3197
+          created: 1743125870440
+          modified: 1743126014431
+          sortKey: -1739300869696.5938
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/serie/18
+            name: serie
+            meta:
+              id: req_39f9920ea90a4b3293ec89885d6717be
+              created: 1743125862405
+              modified: 1752088568573
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574671
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/serie/?termo=educa
+            name: serie
+            meta:
+              id: req_822ec2a6cc4c4ef9bed0d1c481baeb28
+              created: 1743125870463
+              modified: 1748176395760
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/serie/18
+            name: serie/id
+            meta:
+              id: req_00c36a2458ff45ffb62a3ef29d0b2486
+              created: 1743125870513
+              modified: 1748174737491
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/serie
+            name: serie
+            meta:
+              id: req_96cc9279ae8b4debaeb677f56c98c885
+              created: 1743125870565
+              modified: 1758995358179
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"CursoId": 1,
+                	"Nome": "serie 0e2",
+                	"SerieAnteriorId":15,
+                	"SeriePosteriorId":null
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/serie/25
+            name: serie
+            meta:
+              id: req_afaeedae3f714d58ba108087c71217d7
+              created: 1743125870618
+              modified: 1758995378254
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"CursoId": 1,
+                	"Nome": "serie 003",
+                	"SerieAnteriorId":14,
+                	"SeriePosteriorId":18
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/serie/grid/?termo=ser
+            name: serie/grid
+            meta:
+              id: req_d505c2b925024c8f997d2156d55f5b91
+              created: 1743125870719
+              modified: 1748176422750
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: teste
+        meta:
+          id: fld_3a29b9a5fd3a4b588296dbabeffe391c
+          created: 1749350012886
+          modified: 1749350022621
+          sortKey: -1738977562979.25
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/teste
+            name: teste
+            meta:
+              id: req_c3b37c03cc11479096ead012e090453f
+              created: 1738626414434
+              modified: 1749350033543
+              isPrivate: false
+              description: ""
+              sortKey: -1749350027793
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/teste/situacao-codigo/204
+            name: teste situação codigo
+            meta:
+              id: req_2eca8e5eba2e4c749ae550b5b846933c
+              created: 1749349766279
+              modified: 1749350030403
+              isPrivate: false
+              description: ""
+              sortKey: -1749350027693
+            method: POST
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: _darvel
+        meta:
+          id: fld_4f8463ab1e8e49eeb260380e777f7d84
+          created: 1755648390147
+          modified: 1755648390147
+          sortKey: -1755648390148
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/mantenedora/darvel
+            name: mantenedora/darvel
+            meta:
+              id: req_f2f718b604f14c569fdd3d6bed9c6c3f
+              created: 1755648429052
+              modified: 1757558347510
+              isPrivate: false
+              description: ""
+              sortKey: -1755648429052
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"RazaoSocial":"Mantenedora enzo ferrari",
+                	"NomeFantasia":"Mantenedora enzo",
+                	"Cnpj":"78899026000100",
+                	"Endereco":"rua da vitória",
+                	"MunicipioId":50,
+                	"Cep":"12341234",
+                	
+                	"InstituicaoEnsinoNome":"f40",
+                	
+                	"Usuario":"f50f50",
+                	"Senha":"Ab1234*"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: cep
+        meta:
+          id: fld_823e70cdb73c48dca78bf4ae772789be
+          created: 1757859579426
+          modified: 1757859604154
+          sortKey: -1739494853747
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/cep/15707118
+            name: cep/cep
+            meta:
+              id: req_36621fff027e48a3ae62f40c157658f2
+              created: 1757859579437
+              modified: 1757870527538
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: matricula
+        meta:
+          id: fld_79f33d61deab436cafadf182655ff4d1
+          created: 1760673674576
+          modified: 1760816860219
+          sortKey: -1739494853711.0625
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/matricula/6
+            name: matricula
+            meta:
+              id: req_d42349fe73dd4127844de7562ef37035
+              created: 1760673674579
+              modified: 1760825805256
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574671
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: true
+              token: ""
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/matricula/?termo=ama
+            name: matricula
+            meta:
+              id: req_4095111bc6bb4a4c81bfdb76c94f5969
+              created: 1760673674582
+              modified: 1760825539435
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/matricula/7
+            name: matricula/id
+            meta:
+              id: req_453c8f7cedb642cd92b52febb0b1818c
+              created: 1760673674583
+              modified: 1760831558771
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/matricula
+            name: matricula
+            meta:
+              id: req_1950934478c64c08abd2eb1d52b1dd25
+              created: 1760673674585
+              modified: 1760824838932
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"AlunoId": 134,
+                	"AnoLetivoId": 10,
+                	"CursoId": 40,
+                	"SerieId": 26,
+                	"MatriculaSituacaoId": 1,
+                	"MatriculaSituacaoData":"2025-10-14"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/matricula/6
+            name: matricula
+            meta:
+              id: req_09a9911461b04386ae010e56c7bb4222
+              created: 1760673674586
+              modified: 1760825216019
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"AlunoId": 134,
+                	"AnoLetivoId": 10,
+                	"CursoId": 40,
+                	"SerieId": 26,
+                	"MatriculaSituacaoId": 2,
+                	"MatriculaSituacaoData":"2025-10-14"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/matricula/grid/?termo=ama
+            name: matricula/grid
+            meta:
+              id: req_208d5606d4d74d7195d531ea9cb9ce45
+              created: 1760673674587
+              modified: 1760825869547
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/matricula/6/situacao-historico/grid
+            name: matricula situacao-historico/grid
+            meta:
+              id: req_9561ea0f5dcd435d8e3f3afc3ca9df89
+              created: 1760816791261
+              modified: 1760825956391
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574571
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+    headers:
+      - name: X-InstituicaoEnsino
+        value: "{{ _.instituicaoEnsinoId }}"
+        description: ""
+        disabled: false
+  - name: Servidor
+    meta:
+      id: fld_863efdf05c9a4fb88b2fec7660bacbb9
+      created: 1738625608139
+      modified: 1738626060165
+      sortKey: -1738625608139
+      description: ""
+    children:
+      - url: "{{ _.Dominio }}/v1/funcionario"
+        name: funcionario
+        meta:
+          id: req_eb543584219047daac29d20b8e8abe8e
+          created: 1737682867920
+          modified: 1738632560150
+          isPrivate: false
+          description: ""
+          sortKey: -1738625649271
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "MantenedoraId":1,
+            	"Nome": "Vandré Medina",
+              "Cpf": "1234567890",
+            	"Rg": "123456",
+            	"Cep": "15707118",
+            	"Email": "vandrerm@gmail.com",
+            	"Lattes": "url o lattes",
+            	"Endereco": "Rua araxá, 145, jardim zaffani",
+            	"WhatsApp": "17997326492",
+            	"TelefonePrincipal": "17997326492"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: Insomnia/2023.5.6
+        authentication:
+          type: bearer
+          disabled: false
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVmFuZHLDqSBNZWRpbmEiLCJqdGkiOiJiM2ExYTdkYS0wOWI4LTRlNGQtYWQzYS1hZTQxN2ZjODUzNzMiLCJleHAiOjE3MzkyMzcwMTEsImlzcyI6IkRhcnZlbEJhY2tlbmRTZXNzYW8iLCJhdWQiOiJEYXJ2ZWxCYWNrZW5kU2VydmljZSJ9.8chRUymJB2KM1n_FmzQy1f5NWmvYpxAQallGpy7Vn2M
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.Dominio }}/v1/sessao/entrar"
+        name: sessao/entrar
+        meta:
+          id: req_a381b83fea474ccf8e7c64cf69e5e79f
+          created: 1737904005918
+          modified: 1739673745131
+          isPrivate: false
+          description: ""
+          sortKey: -1738625649371
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"usuario":"vandre",
+            	"senha": "Ab1234*"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: Insomnia/2023.5.6
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.Dominio }}/v1/teste"
+        name: teste
+        meta:
+          id: req_62dabfb7f53e408db5d67b1520bd0cce
+          created: 1738626340320
+          modified: 1738626442915
+          isPrivate: false
+          description: ""
+          sortKey: -1738625649171
+        method: GET
+        headers:
+          - name: User-Agent
+            value: Insomnia/2023.5.6
+        authentication:
+          type: bearer
+          disabled: false
+          token: "{{ _.Token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.Dominio }}/v1/funcionario/5"
+        name: funcionario/id
+        meta:
+          id: req_87d8f9f7fd45464a980a731eadc29a4d
+          created: 1739673705852
+          modified: 1739673736212
+          isPrivate: false
+          description: ""
+          sortKey: -1738625649471
+        method: GET
+        headers:
+          - name: User-Agent
+            value: Insomnia/2023.5.6
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: municipio
+        meta:
+          id: fld_3f80b0c8b8df4bc9a18bebacd965caf6
+          created: 1739494853671
+          modified: 1740016359168
+          sortKey: -1738625649571
+          description: ""
+        children:
+          - url: "{{ _.Dominio }}/v1/municipio/?termo=josé
+              preto&paginaNumero=1&paginaQuantidade=10"
+            name: municipio
+            meta:
+              id: req_9eba46be6e7a434db93200f1c4181222
+              created: 1739494889367
+              modified: 1740254009441
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: recursoacao
+        meta:
+          id: fld_b3f79c071d9045c49622595d08ea2e87
+          created: 1741826342746
+          modified: 1741826358116
+          sortKey: -1738625649671
+          description: ""
+        children:
+          - url: "{{ _.Dominio }}/v1/recursoacao"
+            name: recursoacao
+            meta:
+              id: req_b401cd4147e34075961dfa7104927ea5
+              created: 1741826342749
+              modified: 1741826377588
+              isPrivate: false
+              description: ""
+              sortKey: -1739494889367
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: teste
+        meta:
+          id: fld_b5c5a69cdbe94494ad86d1416254adf9
+          created: 1749350039804
+          modified: 1749350057404
+          sortKey: -1738625649771
+          description: ""
+        children:
+          - url: "{{ _.Dominio }}/v1/teste"
+            name: teste
+            meta:
+              id: req_8ada041754dc42e9bfa895d499ede323
+              created: 1749350039807
+              modified: 1749350905914
+              isPrivate: false
+              description: ""
+              sortKey: -1749350027793
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: "{{ _.Dominio }}/v1/teste/situacao-codigo/204"
+            name: teste situação codigo
+            meta:
+              id: req_da506f1ace7b420382d1d3e3b5446036
+              created: 1749350039813
+              modified: 1749350093516
+              isPrivate: false
+              description: ""
+              sortKey: -1749350027693
+            method: POST
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: bearer
+              disabled: false
+              token: "{{ _.Token }}"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+    environment:
+      Dominio: https://darvel-api-fwdkdbcjcpbvf6bs.canadacentral-01.azurewebsites.net
+      Token: cdd
+    environmentPropertyOrder:
+      "&":
+        - Dominio
+        - Token
+  - name: Outros
+    meta:
+      id: fld_9066685422ef4d36b9140404a783dd5a
+      created: 1758329488173
+      modified: 1758329500702
+      sortKey: -1738270368190.5
+      description: ""
+    children:
+      - url: https://localhost:7156/hub/usuario
+        name: New Request
+        meta:
+          id: req_a4a272f004be4a4f8267b73eae769ae1
+          created: 1751338388556
+          modified: 1758329508578
+          isPrivate: false
+          description: ""
+          sortKey: -1758329508536
+        method: GET
+        headers:
+          - name: User-Agent
+            value: Insomnia/2023.5.6
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://localhost:7156/hub/usuario/negotiate
+        name: New Request
+        meta:
+          id: req_cf513774852c4346a3fe5a85f8ea5002
+          created: 1758329524793
+          modified: 1758329625324
+          isPrivate: false
+          description: ""
+          sortKey: -1758329524793
+        method: POST
+        headers:
+          - name: User-Agent
+            value: Insomnia/2023.5.6
+          - name: X-InstituicaoEnsino
+            value: "1"
+            description: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_caabc50a7458edda629e167aa10c5f4682e51a0e
+    created: 1737682863439
+    modified: 1759074829604
+    isPrivate: false
+  data:
+    instituicaoEnsinoId: 43
+    instituicaoEnsinoIddff: 1
