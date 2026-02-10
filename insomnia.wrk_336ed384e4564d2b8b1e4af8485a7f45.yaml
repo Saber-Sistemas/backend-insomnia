@@ -11,7 +11,7 @@ collection:
     meta:
       id: fld_d415e02312ec4dda83718b2ed871d707
       created: 1737915128242
-      modified: 1759074829606
+      modified: 1770683754623
       sortKey: -1738447988164.75
       description: ""
     children:
@@ -2390,12 +2390,12 @@ collection:
           - url: https://localhost:7156/v1/sessao/entrar
             name: sessao/entrar
             meta:
-              id: req_aadebbcfaf3c41cca99ca138e938f901
-              created: 1738625643796
-              modified: 1759198135283
+              id: req_a381b83fea474ccf8e7c64cf69e5e79f
+              created: 1737904005918
+              modified: 1770683603391
               isPrivate: false
               description: ""
-              sortKey: -1740275691512
+              sortKey: -1740178091343.875
             method: POST
             body:
               mimeType: application/json
@@ -2409,7 +2409,6 @@ collection:
                 value: application/json
               - name: User-Agent
                 value: Insomnia/2023.5.6
-                disabled: false
             settings:
               renderRequestBody: true
               encodeUrl: true
@@ -3842,7 +3841,7 @@ collection:
     meta:
       id: fld_863efdf05c9a4fb88b2fec7660bacbb9
       created: 1738625608139
-      modified: 1738626060165
+      modified: 1770683811792
       sortKey: -1738625608139
       description: ""
     children:
@@ -3880,36 +3879,6 @@ collection:
           type: bearer
           disabled: false
           token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVmFuZHLDqSBNZWRpbmEiLCJqdGkiOiJiM2ExYTdkYS0wOWI4LTRlNGQtYWQzYS1hZTQxN2ZjODUzNzMiLCJleHAiOjE3MzkyMzcwMTEsImlzcyI6IkRhcnZlbEJhY2tlbmRTZXNzYW8iLCJhdWQiOiJEYXJ2ZWxCYWNrZW5kU2VydmljZSJ9.8chRUymJB2KM1n_FmzQy1f5NWmvYpxAQallGpy7Vn2M
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
-      - url: "{{ _.Dominio }}/v1/sessao/entrar"
-        name: sessao/entrar
-        meta:
-          id: req_a381b83fea474ccf8e7c64cf69e5e79f
-          created: 1737904005918
-          modified: 1739673745131
-          isPrivate: false
-          description: ""
-          sortKey: -1738625649371
-        method: POST
-        body:
-          mimeType: application/json
-          text: |-
-            {
-            	"usuario":"vandre",
-            	"senha": "Ab1234*"
-            }
-        headers:
-          - name: Content-Type
-            value: application/json
-          - name: User-Agent
-            value: Insomnia/2023.5.6
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -4081,20 +4050,36 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-          - url: ""
-            name: New Request
+      - name: sessao
+        meta:
+          id: fld_9886cf61d7904706a14a78bb96a33a34
+          created: 1770683453552
+          modified: 1770683811792
+          sortKey: -1770683453552
+          description: ""
+        children:
+          - url: "{{ _.Dominio }}/v1/sessao/entrar"
+            name: sessao/entrar
             meta:
-              id: req_0ca8e448ff4c42cc8fc6fd7acd0055c7
-              created: 1770683303484
-              modified: 1770683303484
+              id: req_aadebbcfaf3c41cca99ca138e938f901
+              created: 1738625643796
+              modified: 1770683676584
               isPrivate: false
               description: ""
-              sortKey: -1770683303484
-            method: GET
+              sortKey: -1770683467787
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"usuario":"vandre",
+                	"senha": "Ab1234*"
+                }
             headers:
+              - name: Content-Type
+                value: application/json
               - name: User-Agent
-                value: insomnia/12.3.1
-                description: ""
+                value: Insomnia/2023.5.6
                 disabled: false
             settings:
               renderRequestBody: true
@@ -4104,13 +4089,54 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: "{{ _.Dominio }}/v1/sessao/alterar-instituicao-ensino"
+            name: sessao/alterar-instituicao-ensino
+            meta:
+              id: req_2ee3e813e6384953b00c2a37d1cb5e8d
+              created: 1770683613378
+              modified: 1770683651233
+              isPrivate: false
+              description: ""
+              sortKey: -1770683467687
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"InstituicaoEnsinoId": 43
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            scripts:
+              afterResponse: |
+                // Pega o JSON da resposta
+                const jsonBody = insomnia.response.json();
+
+                // Salva de volta no ambiente
+                insomnia.environment.set("instituicaoEnsinoId", jsonBody.id);
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
     environment:
-      Dominio: https://darvel-api-fwdkdbcjcpbvf6bs.canadacentral-01.azurewebsites.net
+      Dominio: https://saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
       Token: cdd
     environmentPropertyOrder:
       "&":
         - Dominio
         - Token
+    headers:
+      - name: X-InstituicaoEnsino
+        value: "{{ _.instituicaoEnsinoId }}"
+        description: ""
+        disabled: false
   - name: Outros
     meta:
       id: fld_9066685422ef4d36b9140404a783dd5a
@@ -4169,13 +4195,36 @@ cookieJar:
   meta:
     id: jar_caabc50a7458edda629e167aa10c5f4682e51a0e
     created: 1770683266082
-    modified: 1770683266082
+    modified: 1770683811787
+  cookies:
+    - id: 66ff9ec7-4fcc-49f7-9bcf-921a668f430d
+      key: ARRAffinity
+      value: 79e06db539acb57119e709978d2cf1da299e8341753d6f6345007fcab3f69bc5
+      domain: saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
+      path: /
+      secure: true
+      httpOnly: true
+    - id: 7d7e0d9e-a505-42e5-966e-5fcafc097339
+      key: ARRAffinitySameSite
+      value: 79e06db539acb57119e709978d2cf1da299e8341753d6f6345007fcab3f69bc5
+      domain: saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
+      path: /
+      secure: true
+      httpOnly: true
+    - id: 2c56de22-9163-4eb9-acc4-2c2418ae39c8
+      key: DarvelToken
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvSWQiOiIxIiwiTWFudGVuZWRvcmFJZCI6IjEiLCJJbnN0aXR1aWNhb0Vuc2lub0lkIjoiMSIsImp0aSI6ImQ0ODA5ZjA4LWJiOWEtNDgzYi05NjQ0LTU0OTJmNjZlN2IzMiIsImV4cCI6MTc3MTI4ODYwOSwiaXNzIjoiRGFydmVsQmFja2VuZFNlc3NhbyIsImF1ZCI6IkRhcnZlbEJhY2tlbmRTZXJ2aWNlIn0.b-KLwjLYScLOv2XRif6SRXvDRN-9dgI337hVNZx95LI
+      domain: saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
 environments:
   name: Base Environment
   meta:
     id: env_caabc50a7458edda629e167aa10c5f4682e51a0e
     created: 1737682863439
-    modified: 1759074829604
+    modified: 1770683811789
     isPrivate: false
   data:
     instituicaoEnsinoId: 43
