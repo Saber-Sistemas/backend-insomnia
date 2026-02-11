@@ -2964,8 +2964,8 @@ collection:
         meta:
           id: fld_f34f9ae4bceb4989932667332efbc469
           created: 1741916024614
-          modified: 1752087817646
-          sortKey: -1739494853759.5
+          modified: 1770767694212
+          sortKey: -1739494853764.1875
           description: ""
         children:
           - url: https://localhost:7156/v1/ano-letivo-situacao/
@@ -3832,6 +3832,330 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+      - name: disciplina
+        meta:
+          id: fld_ef268b7e3e7d4d8683eafaf7d92b9000
+          created: 1770683998903
+          modified: 1770683998903
+          sortKey: -1739494853728.25
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/disciplina/
+            name: disciplina
+            meta:
+              id: req_360461c2808b409fbe207083086b047a
+              created: 1770683998905
+              modified: 1770771777571
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/disciplina/2
+            name: disciplina/id
+            meta:
+              id: req_f357ba85bf0c4f7fbb0383bb4772bd79
+              created: 1770683998907
+              modified: 1770771902972
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/disciplina
+            name: disciplina
+            meta:
+              id: req_0435eb25f3e642a79fa1bb73b4277329
+              created: 1770683998909
+              modified: 1770771928200
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "portuguès devagar",
+                	"AreaConhecimentoId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/disciplina/3
+            name: disciplina
+            meta:
+              id: req_3dfdd3be89bc462a943644d0fd22a613
+              created: 1770683998911
+              modified: 1770772104033
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "matemáticaasd",
+                	"AreaConhecimentoId": 11
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/disciplina/4
+            name: disciplina
+            meta:
+              id: req_5ab6fb2f440c4c83a9094abd3752ac31
+              created: 1770683998914
+              modified: 1770772085177
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/disciplina/grid/?termo=port
+            name: disciplina/grid
+            meta:
+              id: req_dcd51c03868348c9b357bc9e03c8f9db
+              created: 1770683998917
+              modified: 1770772028643
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: area-conhecimento
+        meta:
+          id: fld_0a030ce76ea54db38992e1e130f92f28
+          created: 1770767669307
+          modified: 1770767688132
+          sortKey: -1739494853762.625
+          description: ""
+        children:
+          - url: https://localhost:7156/v1/area-conhecimento/?termo=nat
+            name: area-conhecimento
+            meta:
+              id: req_0e345f0625b64f33b4bdd01c0c7bd870
+              created: 1770767669309
+              modified: 1770770281958
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574796
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/area-conhecimento/1
+            name: area-conhecimento/id
+            meta:
+              id: req_97866aa47e164e8c9729ec3c51173f09
+              created: 1770767669311
+              modified: 1770770259682
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574896
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/area-conhecimento
+            name: area-conhecimento
+            meta:
+              id: req_28d894e63c714e548523e7bc214b632d
+              created: 1770767669312
+              modified: 1770770346940
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575496
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "ciências da super naturezaxxx"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/area-conhecimento/1
+            name: area-conhecimento
+            meta:
+              id: req_792d76c0cb4d4ca5b2d5f55c4e02ea07
+              created: 1770767669314
+              modified: 1770770221463
+              isPrivate: false
+              description: ""
+              sortKey: -1738977575296
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "Nome": "ciências da super natureza2"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/area-conhecimento/2
+            name: area-conhecimento
+            meta:
+              id: req_6a47f724acda487b96a0b3a3c4eacaa7
+              created: 1770767669316
+              modified: 1770770378045
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574696
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            authentication:
+              type: none
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://localhost:7156/v1/area-conhecimento/grid/?termo=nat
+            name: area-conhecimento/grid
+            meta:
+              id: req_3ae35b99024144149466ac5933a40ae6
+              created: 1770767669318
+              modified: 1770770314342
+              isPrivate: false
+              description: ""
+              sortKey: -1738977574771
+            method: GET
+            headers:
+              - name: User-Agent
+                value: Insomnia/2023.5.6
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
     headers:
       - name: X-InstituicaoEnsino
         value: "{{ _.instituicaoEnsinoId }}"
@@ -4195,26 +4519,34 @@ cookieJar:
   meta:
     id: jar_caabc50a7458edda629e167aa10c5f4682e51a0e
     created: 1770683266082
-    modified: 1770683811787
+    modified: 1770768270401
   cookies:
-    - id: 66ff9ec7-4fcc-49f7-9bcf-921a668f430d
+    - id: eb8bb742-ecfa-4cf0-a1db-66e58bef3efe
       key: ARRAffinity
       value: 79e06db539acb57119e709978d2cf1da299e8341753d6f6345007fcab3f69bc5
       domain: saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
       path: /
       secure: true
       httpOnly: true
-    - id: 7d7e0d9e-a505-42e5-966e-5fcafc097339
+    - id: 5972144a-70e5-45bc-bfe6-2f6da08cca9a
       key: ARRAffinitySameSite
       value: 79e06db539acb57119e709978d2cf1da299e8341753d6f6345007fcab3f69bc5
       domain: saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
       path: /
       secure: true
       httpOnly: true
-    - id: 2c56de22-9163-4eb9-acc4-2c2418ae39c8
+    - id: d8ff3fd3-5060-4809-8f79-67f806795a41
       key: DarvelToken
       value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvSWQiOiIxIiwiTWFudGVuZWRvcmFJZCI6IjEiLCJJbnN0aXR1aWNhb0Vuc2lub0lkIjoiMSIsImp0aSI6ImQ0ODA5ZjA4LWJiOWEtNDgzYi05NjQ0LTU0OTJmNjZlN2IzMiIsImV4cCI6MTc3MTI4ODYwOSwiaXNzIjoiRGFydmVsQmFja2VuZFNlc3NhbyIsImF1ZCI6IkRhcnZlbEJhY2tlbmRTZXJ2aWNlIn0.b-KLwjLYScLOv2XRif6SRXvDRN-9dgI337hVNZx95LI
       domain: saber-sistemas-api-c5hpgyb8bsc8beet.canadacentral-01.azurewebsites.net
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+    - id: 73711aee-be39-4811-a4fc-4c20a79a0118
+      key: DarvelToken
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvSWQiOiIxIiwiTWFudGVuZWRvcmFJZCI6IjEiLCJJbnN0aXR1aWNhb0Vuc2lub0lkIjoiMSIsImp0aSI6IjMyNTVlMGQ4LWFiZjUtNGZiMC1hODc4LWI2ZmJhMTM5M2MzZCIsImV4cCI6MTc3MTM3MzA2OCwiaXNzIjoiRGFydmVsQmFja2VuZFNlc3NhbyIsImF1ZCI6IkRhcnZlbEJhY2tlbmRTZXJ2aWNlIn0.Ona95r9LchHifB0xqVz7KDOfYAUTRalOLPo_FzhvYik
+      domain: localhost
       path: /
       secure: true
       httpOnly: true
